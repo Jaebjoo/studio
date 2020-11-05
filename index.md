@@ -4,7 +4,7 @@ layout: default
 description: Home Page
 ---
 
-# HOME
+# BIT DEV OPS
 Studio 5
 [AGILE Evidence](userStories.html){: .btn}
 

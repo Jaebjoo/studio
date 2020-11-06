@@ -17,7 +17,7 @@ Azure IoT platform allows management of IoT devices, integrated into the Azure I
 
 #### Creating IoT Hub
 
-![User Story](userStory.png "User Story")
+![User Story](images\Azure_Vnet\Screen Shot 2020-09-03 at 3.46.07 PM.png "User Story")
 
 #### Send Telemetry Data
 

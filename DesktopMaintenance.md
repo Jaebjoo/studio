@@ -39,14 +39,14 @@ On the 28th and 29th of August, Jonathon and I checked and fixed computers in D3
 
 ![3](images\Desktop_Maintenance\3.jpg "3")
 
-![4](images\Desktop_Maintenance\3.jpg "4")
+![4](images\Desktop_Maintenance\4.jpg "4")
 
-![5](images\Desktop_Maintenance\3.jpg "5")
+![5](images\Desktop_Maintenance\5.jpg "5")
 
-![6](images\Desktop_Maintenance\3.jpg "6")
+![6](images\Desktop_Maintenance\6.jpg "6")
 
-![7](images\Desktop_Maintenance\3.jpg "7")
+![7](images\Desktop_Maintenance\7.jpg "7")
 
-![8](images\Desktop_Maintenance\3.jpg "8")
+![8](images\Desktop_Maintenance\8.jpg "8")
 
-![9](images\Desktop_Maintenance\3.jpg "9")
+![9](images\Desktop_Maintenance\9.jpg "9")

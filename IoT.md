@@ -1,24 +1,23 @@
 ---
-title: Azure Research IoT
+title: Studio 5 Desktop Maintenance
 layout: default
-description: Azure Research IoT
+description: Studio 5 Desktop Maintenance
 ---
 
-## Azure Research : IoT
-# USER STORIES
+## Studio 5 : 
+# Desktop Maintenance
 
-[NEXT](sprintPlanning.html){: .btn}
+#### Client's Requests
 
-**Azure IoT**
+Desktop Maintenance of physical machines in in D312 must be carried out weekly on a roster.
 
-[Agile Alliance: User Stories](https://www.agilealliance.org/glossary/user-stories){:target="_blank"}
+I carried out the maintenance with Jonathon on August 28th
 
-Azure IoT platform allows management of IoT devices, integrated into the Azure Infrastructure which includes databases, VMs, and most importantly Azure Stream Analytics.
 
-#### Creating IoT Hub
+#### Summary
 
 ![User Story](images\Azure_Vnet\Screen Shot 2020-09-03 at 3.46.07 PM.png "User Story")
 
-#### Send Telemetry Data
+#### Reflection
 
 #### Control a device

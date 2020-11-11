@@ -5,7 +5,7 @@ description: Studio 5 Azure PowerShell
 ---
 
 ## Studio 5 : 
-# Azure VM
+# Azure PowerShell
 
 #### Research Summary
 

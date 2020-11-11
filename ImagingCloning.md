@@ -25,6 +25,8 @@ I took somewhat of a support role in this ticket with Reagan and Scott leading. 
 
 This task has been the only task that has stalled during the semester. 
 
+A proper solution was not found.
+
 The team ran into a multitude of problems
 
 * patching
@@ -35,7 +37,15 @@ The team ran into a multitude of problems
 * initiating the deployment
 * patching post-deployment
 
+I feel there was not enough research into the task personally, 
+I also feel that we were lead into the task with an unsuitable software that was not fully tested.
+We were also expected to complete other tasks, it was difficult to fully commit to this task.
+Communication within the team was sufficient, however communication with the client had slightly deteriorated.
 
+It has been interesting approaching this task, as it involved actual operating systems and physical hardware as opposed to the virtual systems on Azure.
+
+We will have to report to this task in the following semester.
+It was disappointing to have an incomplete ticket.
 
 #### Imaging 
 
@@ -56,3 +66,6 @@ The team ran into a multitude of problems
 ![Imaging Success](images\Imaging_Cloning\9ImagingSuccess.jpg "Imaging Success")
 
 #### Cloning, Deployment
+
+Cloning and Deployment was largely a failure.
+After deployment, the machines failed to patch properly and the ticket has stalled.

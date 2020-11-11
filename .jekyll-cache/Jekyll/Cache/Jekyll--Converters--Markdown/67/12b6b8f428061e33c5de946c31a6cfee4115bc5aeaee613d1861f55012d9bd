@@ -1,0 +1,61 @@
+I"<h2 id="studio-5-">Studio 5 :</h2>
+<h1 id="iot-simulation">IoT Simulation</h1>
+
+<h4 id="clients-requests">Client’s Requests</h4>
+
+<p>The aim of this task is to simulate multiple IoT devices which have been installed in a fleet of trucks, connected to the IoT Central Platform.</p>
+
+<p>The secondary aim is to explore the possibilities with Azure IoT Services.</p>
+
+<h4 id="summary">Summary</h4>
+
+<p>Simulated Telemetry Data was received on the IoT Central and also a method was called on the device.</p>
+
+<p>All the code was provided on Azure Learn.</p>
+
+<p>This code and template can be modified to meet various use cases and scenarios.</p>
+
+<h4 id="reflection">Reflection</h4>
+
+<p>This was a beginners level exercise, however it widened my horizon on the possibilites of IoT services especially on Azure.</p>
+
+<p>Before this exercise and the research into IoT, I had the understanding that IoT was limited to integrated household devices controlled by a central device that is voice controlled.</p>
+
+<p>However the wide range of devices meant that IoT management services and small devices with their own small processing power could be integrated into many industries providing a unfathomable amount of data that could be used to increase productivity.</p>
+
+<p>IoT could be integrated into:</p>
+<ul>
+  <li>Manufracturing industry within factory machines on an assembly line</li>
+  <li>Agricultural industry within crops to monitor farming conditions and respond to failing crops.</li>
+  <li>Logistics industry within fleets of trucks and delivery drivers to reduce delays and boost delivery rates.</li>
+  <li>Retail to monitor inventory levels in real time</li>
+  <li>Medical industry to monitor patients’ vital signs</li>
+</ul>
+
+<p>I have been made aware that there are free IoT platforms.
+The advantage of the Azure Platform is that all of the Azure infrastructure can be fully integrated with the IoT Platform.
+This includes the databases, security, other VMs, and most importantly, data analysis services (Stream Analytics). This allows the data to be processed into meaningful data.
+It can also be integrated with machine learning services to compute this data into responses that are automated by algorithms.</p>
+
+<h4 id="task-details">Task Details</h4>
+
+<p>A device template needs to be created with a interface diaplaying what the device can store and print as data.</p>
+
+<p>This can be created within Azure IoT Central.</p>
+
+<p>The Azure IoT Central manages the IoT devices and connections.</p>
+
+<p>These templates would be applied to a real device. 
+Devices can also be added to IoT Central. 
+Connection to the devices are managed with connection keys.</p>
+
+<p>A Azure Maps Account can be created for free.</p>
+
+<p>Demo Code can be taken from the Azure Learn pages.
+Essentially, global location variables are added, with telemetry variables that are recorded by the device. The data is then routed to the IoT Central.</p>
+
+<p>Commands can also be sent to the device to initiate a process on the device.
+In this case the device has been sent to a customer.</p>
+
+<p>This was a simple simulation for the IoT Devices sending telemetry data as well as calling methods on the device.</p>
+:ET

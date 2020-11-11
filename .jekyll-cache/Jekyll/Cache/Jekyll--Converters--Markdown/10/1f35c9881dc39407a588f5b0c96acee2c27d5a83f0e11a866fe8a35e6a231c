@@ -1,0 +1,46 @@
+I"y<h2 id="studio-5-">Studio 5 :</h2>
+<h1 id="azure-mariadb">Azure MariaDB</h1>
+
+<h4 id="research-summary">Research Summary</h4>
+
+<p>MariaDB can be set up as IaaS or a DBaaS on Azure Platform.</p>
+
+<p>A basic VM can be used to create a MariaDB Server VM.
+MariaDB can be installed on a VM allowing the freedom to manage the VM. Though this requires the admin to set up security, patching and maintenance schedules, you have more freedom with when maintenance occurs and what scripts can be run.</p>
+
+<p>Some solutions may require the control of the VM as multiple services are required to run on it together.</p>
+
+<p>The MariaDB Service creates an instance of a MariaDB Application and allows users to connect directly to the Service.</p>
+
+<p>Security can still be configured on the Azure Portal Settings</p>
+
+<p>Pricing is relatively similar with similar resource capacities. However lighter VMs can be as cheap as 7 - 20 NZD per month to run.</p>
+
+<h4 id="setting-up-a-mariadb-dbaas-and-iaas">Setting up a MariaDB DBaaS and IaaS</h4>
+
+<p><img src="images\MariaDB\1heading.png" alt="Maria DB" title="Maria DB" /></p>
+
+<p><img src="images\MariaDB\2dbServerName.png" alt="Maria DB" title="Maria DB" /></p>
+
+<p><img src="images\MariaDB\3bashLogin.png" alt="Maria DB" title="Maria DB" /></p>
+
+<p><img src="images\MariaDB\4pricingSetting.png" alt="Maria DB" title="Maria DB" /></p>
+
+<p><img src="images\MariaDB\5pricingOptions.png" alt="Maria DB" title="Maria DB" /></p>
+
+<p><img src="images\MariaDB\6pricing1core.png" alt="Maria DB" title="Maria DB" /></p>
+
+<p><img src="images\MariaDB\7pricing2core.png" alt="Maria DB" title="Maria DB" /></p>
+
+<p><img src="images\MariaDB\8pricingApply.png" alt="Maria DB" title="Maria DB" /></p>
+
+<p><img src="images\MariaDB\9securitySetting.png" alt="Maria DB" title="Maria DB" /></p>
+
+<p><img src="images\MariaDB\10firewall.png" alt="Maria DB" title="Maria DB" /></p>
+
+<p><img src="images\MariaDB\11firewallAddIP.png" alt="Maria DB" title="Maria DB" /></p>
+
+<p><img src="images\MariaDB\12firewallAddIP2.png" alt="Maria DB" title="Maria DB" /></p>
+
+<p><img src="images\MariaDB\13vmmariadbinstall.png" alt="Maria DB" title="Maria DB" /></p>
+:ET

@@ -1,0 +1,11 @@
+I"Ž<h2 id="studio-5-">Studio 5 :</h2>
+<h1 id="azure-nic">Azure NIC</h1>
+
+<h4 id="research-summary">Research Summary</h4>
+
+<p>A brief exploration into Network interface restrictions revealed that the size of the VM will determine how many network adaptors can be added. Further details are specified in the Linux Configuration page.</p>
+
+<p>VMs capable of attaching upto 4 Network Adapters cost from 200 NZD per month to operate.</p>
+
+<p>Though I am not aware of what the wider potential of having multiple Network adapters is, opposed to simply being connected via Vnet and Peering, it should allow unique network topologies in a corporate environment.</p>
+:ET

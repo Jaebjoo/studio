@@ -1,0 +1,19 @@
+I"ð<h2 id="studio-5-">Studio 5 :</h2>
+<h1 id="sql-db">SQL DB</h1>
+
+<h4 id="research-summary">Research Summary</h4>
+
+<p>SQL Database on Azure seems more resource heavy compared to MariaDB and there is a vast difference in the price.</p>
+
+<p>Pricing of the SQL service starts at approximately $500 per month.</p>
+
+<p>Though there are serverless computing options which charge per transaction, these are only limited to SingleDatabase solutions.</p>
+
+<p>Multidatabase solutions are called elastic pools.</p>
+
+<p>Storage can be scaled automatically with elastic pools.</p>
+
+<p>It seems that SQL solutions are tailored for corporate scenarios as a backend for large scale operations.</p>
+
+<p>Backups can be automated and there is a high availability rate.</p>
+:ET

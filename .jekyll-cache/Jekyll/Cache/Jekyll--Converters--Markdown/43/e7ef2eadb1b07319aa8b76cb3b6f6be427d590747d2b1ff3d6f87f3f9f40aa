@@ -1,0 +1,15 @@
+I"<h2 id="studio-5-">Studio 5 :</h2>
+<h1 id="azure-vnet">Azure VNet</h1>
+
+<h4 id="research-summary">Research Summary</h4>
+
+<p>Azure Virtual Networks are easy to deploy, however considerations on Network Design should be thoroughly planned beforehand.</p>
+
+<p>Creating Virtual Switches using Hyper-V Manager is also possible.</p>
+
+<p>VMs are able to have restricted access from the public network and only gain access through a gateway VM.</p>
+
+<p>Vnets can be interconnected using Peering.
+Subnets can also be easily created within Azure.</p>
+
+:ET

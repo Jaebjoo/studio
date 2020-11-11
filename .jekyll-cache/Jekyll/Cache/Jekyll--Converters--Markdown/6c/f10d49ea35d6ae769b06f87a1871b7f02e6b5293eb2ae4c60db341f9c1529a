@@ -1,0 +1,20 @@
+I"n<h2 id="studio-5-">Studio 5 :</h2>
+<h1 id="azure-vm">Azure VM</h1>
+
+<h4 id="research-summary">Research Summary</h4>
+
+<p>Azure virtual machines allows users to create machines of various sizes, operating systems and allows relatively wide freedom in terms of networking capabilities.</p>
+
+<p>VMs are easily deployable on Azure Portal and can be connected by ssh through PuTTY, Azure powershell and bash shell.
+Access authorisations can be set with a password or pem key.
+When a Network security group is added to the VNet, security firewall settings can be configured to restrict access from other sources.</p>
+
+<p>VMs have been used this semester to</p>
+<ul>
+  <li>conduct security investigations with Kali Linux.</li>
+  <li>establish a MariaDB server</li>
+  <li>establish a docker server</li>
+  <li>investigate network peering</li>
+  <li>explore DevTestLab services</li>
+</ul>
+:ET

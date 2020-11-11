@@ -1,0 +1,64 @@
+I"�
+<h2 id="studio-5-">Studio 5 :</h2>
+<h1 id="user-adding">User Adding</h1>
+
+<h4 id="clients-requests">Client’s Requests</h4>
+
+<p>Client requests drills to be conducted on the DB2 and DB3 VM’s to add users and create docker containers for each user.</p>
+
+<h4 id="summary">Summary</h4>
+
+<p>Following documentation and updating it as the team was a challenge. Though it created good communication between the team to cross check how the procedures were meant to be carried out.
+DB2 Users were created using a script with a csv file of student details.
+DB3 Users were also created in the same manner with the addition of docker container creations.</p>
+
+<p>Full functionality was confirmed after procedures were carried out.
+The Machines were reverted back to a restore point for other members to carry out the exercise.</p>
+
+<h4 id="reflection">Reflection</h4>
+
+<ul>
+  <li>It was a good opporunity to be exposed to scripting and automating tasks such as user adding and container creation</li>
+  <li>It was also a good experience to work together as a team to update documentation and manuals to carry out procedures.</li>
+  <li>As each team member followed the documentation, it was a check to see whether the procedures written were clear and concise enough for others to follow.</li>
+  <li>This gave a clear insight into the importance of documenting CLEAR instructions with detailed evidence.</li>
+</ul>
+
+<h4 id="procedures">Procedures</h4>
+
+<p>Login to server to load scripts and csv</p>
+
+<p><img src="images\DB_User_Adding\1serverlogin.jpg" alt="Server Login" title="Server Login" /></p>
+
+<p>Run an update before the scripts are run</p>
+
+<p><img src="images\DB_User_Adding\2serverupdate.jpg" alt="Server Update" title="Server Update" /></p>
+
+<p>Run scripts with csv file as argument</p>
+
+<p><img src="images\DB_User_Adding\3runscriptadduser.jpg" alt="Run Script" title="Run Script" /></p>
+
+<p>Checking the users have been added correctly</p>
+
+<p><img src="images\DB_User_Adding\4useraddcheck.jpg" alt="Check" title="Check" /></p>
+
+<p>Checking Maria DB login successful</p>
+
+<p><img src="images\DB_User_Adding\5usermariadblogin.jpg" alt="DB Login" title="DB Login" /></p>
+
+<p>Adding Users to DB3 Server</p>
+
+<p><img src="images\DB_User_Adding\6db3useradd.jpg" alt="User Add DB3" title="User Add DB3" /></p>
+
+<p>Checking Docker Groups</p>
+
+<p><img src="images\DB_User_Adding\7dockergroupcheck.jpg" alt="Docker Check" title="Docker Check" /></p>
+
+<p>Creating containers after logging into a user</p>
+
+<p><img src="images\DB_User_Adding\8userlogincheckcontainercreate.jpg" alt="Container Create" title="Container Create" /></p>
+
+<p>Checking that the containers have been made.</p>
+
+<p><img src="images\DB_User_Adding\9dockercontainercheck.jpg" alt="Container Check" title="Container Check" /></p>
+:ET

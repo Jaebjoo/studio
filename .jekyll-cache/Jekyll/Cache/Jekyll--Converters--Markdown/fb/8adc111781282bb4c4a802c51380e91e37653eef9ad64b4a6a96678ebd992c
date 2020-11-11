@@ -1,0 +1,156 @@
+I"�<h2 id="studio-5-">Studio 5 :</h2>
+<h1 id="linux-configuration">Linux Configuration</h1>
+
+<h4 id="clients-requests">Client’s Requests</h4>
+
+<p><img src="images\Linux_Configuration\0Linux Architecture.png" alt="Client Request" title="Client Request" /></p>
+
+<p>Client requests 3 VMs connected on 3 different networks. 2 VMs connected to 1 gateway VM, connected to the internet with a public IP.</p>
+
+<h4 id="summary">Summary</h4>
+
+<p>3 VMs were created with 3Vnets which were peered to one of the Vnets.
+VM connectivity was successful, however seperate NIs, a total of 3 needed for the gateway VM was difficult to implement and very costly.
+Next step would be to try and create a virtualised environment inside the VM itself that can recreate the architecture.
+Azure has limitations which are not well suited to this particular request. Azure is streamlined for a mainstream, corporate demand for virtual cloud infrastructures.</p>
+
+<h4 id="reflection">Reflection</h4>
+
+<ul>
+  <li>I am much more comfortable with creating VMs and resizing them for a particular purpose.</li>
+  <li>Networking VMs as well as different Vnets to have successful connectivity will be useful skills later on when appproaching more sophisticated architecture.</li>
+  <li>I am more aware of size restrictions, NI limitations of each VM size and also the corresponding costs which may be a large burden.</li>
+  <li>Theoretically, bridging on the gateway vm after attaching the NI would be possible, though I believe realistically, simply peering Vnet2 to 3 would be a easier solution.</li>
+  <li>I have become more aware of the use of a gateway VM which serves to limit public connection and security against outside threats.</li>
+  <li>Azure Bash shell is very responsive and allows easy access to each VM</li>
+  <li>Network security can be managed at each individual level with a firewall configured within the VM as well as in the Azure portal.</li>
+  <li>Overall, it was a valuable experience to learn advanced features of VMs and Networking.</li>
+</ul>
+
+<h4 id="solving-solution">Solving Solution</h4>
+
+<p><strong>Creating VNets</strong></p>
+
+<p>3 Vnets were created in total on Azure</p>
+
+<p><img src="images\Linux_Configuration\1vnetList.png" alt="Vnet List" title="Vnet List" /></p>
+
+<p>Vnet 1 was peered to Vnet 2 and 3</p>
+
+<p><img src="images\Linux_Configuration\2vnet1peering.png" alt="Vnet 1 Peering" title="Vnet 1 Peering" /></p>
+
+<p>Vnet 2 and 3 peered to 1</p>
+
+<p><img src="images\Linux_Configuration\3vnet2peering.png" alt="Vnet 2 Peering" title="Vnet 2 Peering" />
+<img src="images\Linux_Configuration\4vnet3peering.png" alt="Vnet 3 Peering" title="Vnet 3 Peering" /></p>
+
+<p>VMs added to each Network</p>
+
+<p><img src="images\Linux_Configuration\5vnet1.png" alt="VM1 Network" title="VM1 Network" />
+<img src="images\Linux_Configuration\6vnet2.png" alt="VM2 Network" title="VM2 Network" />
+<img src="images\Linux_Configuration\7vnet3.png" alt="VM3 Network" title="VM3 Network" /></p>
+
+<p>Complete architecture of the networks.</p>
+
+<p><img src="images\Linux_Configuration\5-0vnetPeering.png" alt="Networks" title="Networks" /></p>
+
+<p>VM1 has a public ip of 104.210.108.234.
+Open bash shell on Azure and connect using this ip.</p>
+
+<p><img src="images\Linux_Configuration\8vm1ip.png" alt="VM1IP" title="VM1IP" /></p>
+
+<p>Type in the command below and enter the password</p>
+
+<p><img src="images\Linux_Configuration\9vm1connection.png" alt="VM1Connection" title="VM1Connection" /></p>
+
+<p>VM2 and 3 have not been given public IPs and can only be accessed through the gateway VM</p>
+
+<p><img src="images\Linux_Configuration\10vm2connection1.png" alt="VM2Connection" title="VM2Connection" /></p>
+
+<p>VM2 private IP</p>
+
+<p><img src="images\Linux_Configuration\11vm2connection2.png" alt="VM2Connection" title="VM2Connection" /></p>
+
+<p>VM3 private IP</p>
+
+<p><img src="images\Linux_Configuration\12vm3connection.png" alt="VM3Connection" title="VM3Connection" /></p>
+
+<p>Use these private IPs to ssh from VM1(gateway VM).</p>
+
+<p>Pinging to test connections to both VMs using Private IP</p>
+
+<p><img src="images\Linux_Configuration\13vm2ping.png" alt="VM2 Ping" title="VM2 Ping" />
+<img src="images\Linux_Configuration\14vm3ping.png" alt="VM3 Ping" title="VM3 Ping" /></p>
+
+<p>ssh to VM2 using private ip</p>
+
+<p><img src="images\Linux_Configuration\15vm2connection3.png" alt="VM2 SSH" title="VM2 SSH" /></p>
+
+<p>VM1 also has a private VM, ping testing from VM2 to VM1 is successful, however you cannot ping from VM2 directly to VM3.
+A simple peering from Vnet2 &lt;&gt; Vnet 3 would solve this issue, however the client requests a bridge be used on VM1 to have connection.</p>
+
+<p><img src="images\Linux_Configuration\16vm1privateip.png" alt="VM1 Private IP" title="VM1 Private IP" /></p>
+
+<p><img src="images\Linux_Configuration\17vm1ping.png" alt="VM1 Ping Success" title="VM1 Ping Success" /></p>
+
+<p><img src="images\Linux_Configuration\18vm3pingfail.png" alt="VM3 Ping Fail" title="VM3 Ping Fail" /></p>
+
+<p>With the network topology completed, additional NICs should be attached to complete the configurations.</p>
+
+<p>NICs can be added in the Networking section of the “Settings”</p>
+
+<p><img src="images\Linux_Configuration\19vmnetworking.png" alt="VM Networking" title="VM Networking" /></p>
+
+<p>New Network interface can be created and attached to the VM</p>
+
+<p><img src="images\Linux_Configuration\33vmnicdiagram.png" alt="VM NIC Diagram" title="VM NIC Diagram" /></p>
+
+<p><img src="images\Linux_Configuration\20vmnic.png" alt="VM NIC" title="VM NIC" /></p>
+
+<p><img src="images\Linux_Configuration\21vmnicattach.png" alt="VM NIC Attach" title="VM NIC Attach" /></p>
+
+<p><img src="images\Linux_Configuration\22nicadding.png" alt="VM NIC Adding" title="VM NIC Adding" /></p>
+
+<p><img src="images\Linux_Configuration\23nicattached.png" alt="VM NIC Attached" title="VM NIC Attached" /></p>
+
+<p>However when a second network interface is added and attaching is attempted, it fails. Particular Azure VMs have a resstriction on the number of NI allowed. The maximum on the VMs on this try allowed only 2.</p>
+
+<p><img src="images\Linux_Configuration\24nicadding2.png" alt="VM NIC Adding Fail" title="VM NIC Adding Fail" /></p>
+
+<p><img src="images\Linux_Configuration\25nicaddingfail.png" alt="VM NIC Adding Fail" title="VM NIC Adding Fail" /></p>
+
+<p>NI have their own individual public and private IPs.</p>
+
+<p><img src="images\Linux_Configuration\26nic1ip.png" alt="VM NIC IP" title="VM NIC IP" /></p>
+
+<p><img src="images\Linux_Configuration\27nic2ip.png" alt="VM NIC IP" title="VM NIC IP" /></p>
+
+<p>These can be seen within the VM with the ‘ ip a ‘ command.</p>
+
+<p><img src="images\Linux_Configuration\28nicipinvm.png" alt="VM NIC IPs" title="VM NIC IP" /></p>
+
+<p>The size of a VM can be adjusted on the size section of settings</p>
+
+<p><img src="images\Linux_Configuration\29changingvmsize.png" alt="VM Size" title="VM Size" /></p>
+
+<p>https://github.com/uglide/azure-content/blob/master/articles/virtual-network/virtual-networks-multiple-nics.md</p>
+
+<p>A github article about the VM sizes can be seen in the link above</p>
+
+<p>A comprehensive list of the number of NIC that can be attached to each VM size is available here.</p>
+
+<p><img src="images\Linux_Configuration\34nictable.png" alt="VM NIC capacity" title="VM NIC capacity" /></p>
+
+<p><img src="images\Linux_Configuration\29changingvmsize.png" alt="VM Size" title="VM Size" /></p>
+
+<p><img src="images\Linux_Configuration\30changingvmsize2.png" alt="VM Size" title="VM Size" /></p>
+
+<p>There may be restrictions on the available VMs based on which region you have established your infrastructure. Costs are also a very significant factor when considering a size upgrade. The A4 which was the final solution to this problem costs +200 Dollars per month.</p>
+
+<p>This was a critical feasibility issue and a new solution had to be found.</p>
+
+<p>However the A4 was able to have 3 different NIC as requested.</p>
+
+<p><img src="images\Linux_Configuration\31nicnewsize.png" alt="VM New Size" title="VM New Size" /></p>
+
+:ET

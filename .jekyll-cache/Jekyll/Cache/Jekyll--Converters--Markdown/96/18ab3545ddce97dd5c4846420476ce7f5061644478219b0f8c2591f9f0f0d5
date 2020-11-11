@@ -1,0 +1,40 @@
+I"5<h1 id="sprint-1--reflection">SPRINT 1 : Reflection</h1>
+<h1 id="lets-be-agile">“Lets be AGILE”</h1>
+
+<p><a href="r2.html" class="btn">NEXT</a></p>
+
+<p><strong>Previous Section</strong> <a href="ta1.html" class="btn">TECHNICAL ACHIEVEMENTS</a></p>
+
+<h5 id="what-did-i-do-well">What did I do well?</h5>
+<h3 id="local-env-set-up--running-client-meeting">LOCAL ENV SET UP + RUNNING CLIENT MEETING</h3>
+<p>As I mentioned in the technical achievements, setting up the local environment required me to be comfortable around unfamiliar tools. Personally, this was a significant obstacle for me to overcome as I am usually a person who prefers to stick to applications that I have always used. I am more comfortable with unfamiliar situations and tools.</p>
+<ul>
+  <li>this feeling would increase in following sprints as I challenge myself to self-learn how to implement features to the project. 
+It was the first time for me to run a meeting with a client present, even if it was just a lecturer pretending to be one. I was eager to run the meeting as smoothly as possible and I was proud of the fact that the meeting was run in a time efficient manner and sufficient preparation had been done for it.</li>
+</ul>
+
+<hr />
+
+<h5 id="what-could-i-have-done-better">What could I have done better?</h5>
+<h3 id="backlog-management--sprint-planning">BACKLOG MANAGEMENT + SPRINT PLANNING</h3>
+<p>As I was still getting used to the idea of User Stories and a shared Kanban board, I tended to cram too much information on a single card. It was not consistently organised and the project backlog was confusing to the client and team members.
+There was a misunderstanding with what needed to be completed in the sprint, and the features promised in the Sprint were incomplete. Sprint planning in future sprints need to be clearly laid out and backlogs need to be clearly organised for all members to understand.</p>
+
+<hr />
+
+<h5 id="what-lessons-did-i-learn">What lessons did I learn?</h5>
+<h3 id="version-control--team-storming--project-management-tools-user-story--backlog--kanban-borad">VERSION CONTROL + TEAM STORMING + PROJECT MANAGEMENT TOOLS (USER STORY + BACKLOG + KANBAN BORAD)</h3>
+<p>Because it was the first time working in a group of 5 with multiple active branches, the idea of version control became more important to understand to avoid merge conflicts in the future. 
+Because it was the first sprint, it was interesting for the team to settle together as a group. I was observing how the team responded to each other’s character and personalities. 
+<strong>AGILE Principle 11 :</strong> The best architectures, requirements, and designs emerge from self-organising teams.
+Team Storming and experiencing first hand how teams settle together would be a valuable for future projects.</p>
+
+<hr />
+
+<h5 id="what-barriers-did-i-encounter">What barriers did I encounter?</h5>
+<h3 id="lack-of-understanding-of-sprints">LACK OF UNDERSTANDING OF SPRINTS</h3>
+<p>Personally, I only perceived a sprint as a period of developing time, with a simple start and deadline. There were many components within a sprint including sprint meetings, sprint planning, backlogs, project boards, sprint reviews, which needed to be coordinated and scheduled.</p>
+<ul>
+  <li>By the end of sprint 6 these processes and the general <strong>AGILE Workflow</strong> would become second nature to me.</li>
+</ul>
+:ET

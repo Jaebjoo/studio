@@ -1,0 +1,138 @@
+I"2<h2 id="studio-5-">Studio 5 :</h2>
+<h1 id="build-a-mean-stack-on-linux-virtual-machine">Build a MEAN Stack on Linux virtual machine</h1>
+
+<h4 id="azure-learn">Azure Learn</h4>
+
+<p>https://docs.microsoft.com/en-au/learn/modules/build-a-web-app-with-mean-on-a-linux-vm/</p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.32.58 PM.png" alt="Image" title="Image" /></p>
+
+<p>A Linux machine is created with the following command on Azure CLI</p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.33.14 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.33.33 PM.png" alt="Image" title="Image" /></p>
+
+<p>Status message is shown once the VM has been created.</p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.34.49 PM.png" alt="Image" title="Image" /></p>
+
+<p>Port 80 must be opened using the following command. This is to allow incomming HTTP traffic.</p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.35.06 PM.png" alt="Image" title="Image" /></p>
+
+<p>Store the ip address of the vm “MeanStack” into variable “ipaddress” using following command.</p>
+
+<p>ssh to the VM using ip address with the user “azureuser”</p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.35.42 PM.png" alt="Image" title="Image" /></p>
+
+<p>ssh to VM is successful.</p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.38.02 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.39.05 PM.png" alt="Image" title="Image" /></p>
+
+<p>Run updates on the VM</p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.39.40 PM.png" alt="Image" title="Image" /></p>
+
+<p>Install MongoDB using apt-get command</p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.39.53 PM.png" alt="Image" title="Image" /></p>
+
+<p>Check that Mongo DB is running</p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.40.36 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.40.54 PM.png" alt="Image" title="Image" /></p>
+
+<p>Check version of MongoDB</p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.41.56 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.42.08 PM.png" alt="Image" title="Image" /></p>
+
+<p>Register the Node.js repository so package manager can locate the packages</p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.42.39 PM.png" alt="Image" title="Image" /></p>
+
+<p>Install the Node.js package</p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.47.26 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.47.45 PM.png" alt="Image" title="Image" /></p>
+
+<p>verify installation using ‘nodejs -v’ command. This version is v.4.2.6</p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.47.55 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.48.00 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.48.21 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.49.06 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.49.12 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.50.23 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.50.44 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.51.06 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.51.13 PM.png" alt="Image" title="Image" /></p>
+
+<p>Start coding with ‘code’ command.</p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.51.48 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.52.14 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.52.36 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.53.14 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.54.07 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.54.32 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.54.41 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.54.51 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.54.54 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.55.12 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.55.24 PM.png" alt="Image" title="Image" />
+<img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.55.32 PM.png" alt="Image" title="Image" />
+<img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.55.50 PM.png" alt="Image" title="Image" />
+<img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.55.54 PM.png" alt="Image" title="Image" />
+<img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.56.16 PM.png" alt="Image" title="Image" />
+<img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.56.19 PM.png" alt="Image" title="Image" />
+<img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.56.29 PM.png" alt="Image" title="Image" />
+<img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.56.46 PM.png" alt="Image" title="Image" />
+<img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.56.52 PM.png" alt="Image" title="Image" />
+<img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.57.58 PM.png" alt="Image" title="Image" />
+<img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.58.07 PM.png" alt="Image" title="Image" />
+<img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.58.20 PM.png" alt="Image" title="Image" />
+<img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.58.52 PM.png" alt="Image" title="Image" />
+<img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 10.05.36 PM.png" alt="Image" title="Image" />
+<img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 10.05.46 PM.png" alt="Image" title="Image" />
+<img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 10.06.03 PM.png" alt="Image" title="Image" />
+<img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 10.06.32 PM.png" alt="Image" title="Image" />
+<img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 10.06.37 PM.png" alt="Image" title="Image" />
+<img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 10.06.50 PM.png" alt="Image" title="Image" />
+<img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 10.07.21 PM.png" alt="Image" title="Image" />
+<img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 10.07.28 PM.png" alt="Image" title="Image" />
+<img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 10.07.34 PM.png" alt="Image" title="Image" />
+<img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 10.07.44 PM.png" alt="Image" title="Image" />
+<img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 10.07.53 PM.png" alt="Image" title="Image" />
+<img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 10.07.56 PM.png" alt="Image" title="Image" />
+<img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 10.08.01 PM.png" alt="Image" title="Image" />
+<img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 10.08.34 PM.png" alt="Image" title="Image" />
+<img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 10.08.37 PM.png" alt="Image" title="Image" />
+<img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 10.08.42 PM.png" alt="Image" title="Image" />
+<!-- ![Image](images\Linux_Configuration\4vnet3peering.png "Image") --></p>
+:ET

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <title>Jae Joo Studio Portfolio</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Jae Joo :: Portfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02" aria-controls="navbarsExample02"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExample02">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home
+                    <span class="sr-only">(current)</span>
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Azure Learn (2020)
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <!-- <a class="dropdown-item" href="IoT.html">Azure Fundamentals</a>
+                <a class="dropdown-item" href="IoT.html">Introduction to Azure IoT</a>
+                <a class="dropdown-item" href="IoT.html">Introduction to Azure SQL</a> -->
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Azure Research (2020)
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="AzureIoT.html">IoT</a>
+                  <a class="dropdown-item" href="AzureMariaDB.html">MariaDB</a>
+                  <a class="dropdown-item" href="SQLDB.html">SQL DB</a>
+                  <a class="dropdown-item" href="AzureVM.html">Azure VM</a>
+                  <a class="dropdown-item" href="AzureVnet.html">Azure Vnet</a>
+                  <a class="dropdown-item" href="AzureNIC.html">Azure NIC</a>
+                  <a class="dropdown-item" href="AzureDevTestLabs.html">Azure DevTestLabs</a>
+                  <a class="dropdown-item" href="AzurePowerShell.html">Azure Portal/PowerShell</a>
+                </div>
+              </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Studio5 Tasks
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="DBMigration.html">DB2/3 Migration (Krissi/Rob)</a>
+                  <a class="dropdown-item" href="DBUserAdding.html">DB2/3 User Adding (Rob)</a>
+                  <a class="dropdown-item" href="IoTSimulation.html">IoT Simulation (Research)</a>
+                  <a class="dropdown-item" href="DesktopMaintenance.html">Desktop Maintenance (Rob)</a>
+                  <a class="dropdown-item" href="LinuxConfiguration.html">Linux Configuration (Faisal)</a>
+                  <a class="dropdown-item" href="ImagingCloning.html">Imaging, Cloning (Hamish)</a>
+                  <a class="dropdown-item" href="SystemAudit.html">System Audit (Rob)</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Studio5 Reflection
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="S5Communication.html">Communication</a>
+                  <a class="dropdown-item" href="S5Documentation.html">Documentation</a>
+                  <a class="dropdown-item" href="S5TimeManagement.html">Time Management</a>
+                  <a class="dropdown-item" href="S5ResearchLearning.html">Research + Learning</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Azure Learn (2021)
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="MEANStack.html">Build a MEAN Stack Web application on Linux VM</a>
+                  <!-- <a class="dropdown-item" href="index.html">...</a> -->
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Azure Research (2021)
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <!-- <a class="dropdown-item" href="index.html">...</a> -->
+                  </div>
+                </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Studio6 Tasks (2021)
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <!-- <a class="dropdown-item" href="index.html">...</a> -->
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Studio6 Reflections (2021)
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <!-- <a class="dropdown-item" href="">...</a> -->
+                </div>
+              </li>
+        </ul>
+    </div>
+</nav>
+<hr>
+    <div class="container">
+        <h2 id="studio-5-">Studio 5 :</h2>
+<h1 id="build-a-mean-stack-on-linux-virtual-machine">Build a MEAN Stack on Linux virtual machine</h1>
+
+<h4 id="azure-learn">Azure Learn</h4>
+
+<p>https://docs.microsoft.com/en-au/learn/modules/build-a-web-app-with-mean-on-a-linux-vm/</p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.32.58 PM.png" alt="Image" title="Image" /></p>
+
+<p>A Linux machine is created with the following command on Azure CLI</p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.33.14 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.33.33 PM.png" alt="Image" title="Image" /></p>
+
+<p>Status message is shown once the VM has been created.</p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.34.49 PM.png" alt="Image" title="Image" /></p>
+
+<p>Port 80 must be opened using the following command. This is to allow incomming HTTP traffic.</p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.35.06 PM.png" alt="Image" title="Image" /></p>
+
+<p>Store the ip address of the vm “MeanStack” into variable “ipaddress” using following command.</p>
+
+<p>ssh to the VM using ip address with the user “azureuser”</p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.35.42 PM.png" alt="Image" title="Image" /></p>
+
+<p>ssh to VM is successful.</p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.38.02 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.39.05 PM.png" alt="Image" title="Image" /></p>
+
+<p>Run updates on the VM</p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.39.40 PM.png" alt="Image" title="Image" /></p>
+
+<p>Install MongoDB using apt-get command</p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.39.53 PM.png" alt="Image" title="Image" /></p>
+
+<p>Check that Mongo DB is running</p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.40.36 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.40.54 PM.png" alt="Image" title="Image" /></p>
+
+<p>Check version of MongoDB</p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.41.56 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.42.08 PM.png" alt="Image" title="Image" /></p>
+
+<p>Register the Node.js repository so package manager can locate the packages</p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.42.39 PM.png" alt="Image" title="Image" /></p>
+
+<p>Install the Node.js package</p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.47.26 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.47.45 PM.png" alt="Image" title="Image" /></p>
+
+<p>verify installation using ‘nodejs -v’ command. This version is v.4.2.6</p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.47.55 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.48.00 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.48.21 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.49.06 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.49.12 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.50.23 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.50.44 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.51.06 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.51.13 PM.png" alt="Image" title="Image" /></p>
+
+<p>Start coding with ‘code’ command.</p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.51.48 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.52.14 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.52.36 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.53.14 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.54.07 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.54.32 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.54.41 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.54.51 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.54.54 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.55.12 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.55.24 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.55.32 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.55.50 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.55.54 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.56.16 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.56.19 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.56.29 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.56.46 PM.png" alt="Image" title="Image" /></p>
+
+<p>Move the completed code directory to the VM</p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.56.52 PM.png" alt="Image" title="Image" /></p>
+
+<p>ipaddress of VM. SSH to VM</p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.57.58 PM.png" alt="Image" title="Image" /></p>
+
+<p>Books directory has been received with scp</p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.58.07 PM.png" alt="Image" title="Image" /></p>
+
+<p>change directory into Books and sudo apt install npm</p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.58.20 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.58.52 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 10.05.36 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 10.05.46 PM.png" alt="Image" title="Image" /></p>
+
+<p>Start the web application</p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 10.06.03 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 10.06.32 PM.png" alt="Image" title="Image" /></p>
+
+<p>Type ip address on web browser to go to web application being served on VM</p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 10.06.37 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 10.06.50 PM.png" alt="Image" title="Image" /></p>
+
+<p>Adding a book on the web application</p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 10.07.21 PM.png" alt="Image" title="Image" /></p>
+
+<p>Successfully added</p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 10.07.28 PM.png" alt="Image" title="Image" /></p>
+
+<p>VM responds with addition on Mongo</p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 10.07.34 PM.png" alt="Image" title="Image" /></p>
+
+<p>Deleting the Record</p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 10.07.44 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 10.07.53 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 10.07.56 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 10.08.01 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 10.08.34 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 10.08.37 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 10.08.42 PM.png" alt="Image" title="Image" />
+<!-- ![Image](images\Linux_Configuration\4vnet3peering.png "Image") --></p>
+
+    </div>
+
+    <hr>
+
+<footer>
+    <div class="container"></div>
+</footer>
+
+</body>
+
+</html>

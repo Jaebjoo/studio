@@ -1,10 +1,10 @@
 ---
-title: Studio 5 
+title: Studio 6 
 layout: default
 description: Build and run a web application with the MEAN stack on an Azure Linux virtual machine
 ---
 
-## Studio 5 : 
+## Studio 6 : 
 # Build a MEAN Stack on Linux virtual machine
 
 #### Azure Learn

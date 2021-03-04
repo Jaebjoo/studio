@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <title>Jae Joo Studio Portfolio</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Jae Joo :: Portfolio :: Studio 6 (2021)</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02" aria-controls="navbarsExample02"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExample02">
+        <ul class="navbar-nav mr-auto">
+            <!-- <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home
+                    <span class="sr-only">(current)</span>
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Azure Learn (2020)
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="IoT.html">Azure Fundamentals</a>
+                <a class="dropdown-item" href="IoT.html">Introduction to Azure IoT</a>
+                <a class="dropdown-item" href="IoT.html">Introduction to Azure SQL</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Azure Research (2020)
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="AzureIoT.html">IoT</a>
+                  <a class="dropdown-item" href="AzureMariaDB.html">MariaDB</a>
+                  <a class="dropdown-item" href="SQLDB.html">SQL DB</a>
+                  <a class="dropdown-item" href="AzureVM.html">Azure VM</a>
+                  <a class="dropdown-item" href="AzureVnet.html">Azure Vnet</a>
+                  <a class="dropdown-item" href="AzureNIC.html">Azure NIC</a>
+                  <a class="dropdown-item" href="AzureDevTestLabs.html">Azure DevTestLabs</a>
+                  <a class="dropdown-item" href="AzurePowerShell.html">Azure Portal/PowerShell</a>
+                </div>
+              </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Studio5 Tasks
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="DBMigration.html">DB2/3 Migration (Krissi/Rob)</a>
+                  <a class="dropdown-item" href="DBUserAdding.html">DB2/3 User Adding (Rob)</a>
+                  <a class="dropdown-item" href="IoTSimulation.html">IoT Simulation (Research)</a>
+                  <a class="dropdown-item" href="DesktopMaintenance.html">Desktop Maintenance (Rob)</a>
+                  <a class="dropdown-item" href="LinuxConfiguration.html">Linux Configuration (Faisal)</a>
+                  <a class="dropdown-item" href="ImagingCloning.html">Imaging, Cloning (Hamish)</a>
+                  <a class="dropdown-item" href="SystemAudit.html">System Audit (Rob)</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Studio5 Reflection
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="S5Communication.html">Communication</a>
+                  <a class="dropdown-item" href="S5Documentation.html">Documentation</a>
+                  <a class="dropdown-item" href="S5TimeManagement.html">Time Management</a>
+                  <a class="dropdown-item" href="S5ResearchLearning.html">Research + Learning</a>
+                </div>
+              </li> -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Azure Learn
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="MEANStack.html">Build a MEAN Stack Web application on Linux VM</a>
+                  <a class="dropdown-item" href="AzureDevOps.html">Azure Dev Ops</a>
+                  <a class="dropdown-item" href="HostWebApp.html">Host Web App with Azure App Service</a>
+                  <a class="dropdown-item" href="CreateWindowsVM.html">Create a Windows VM</a>
+                  <a class="dropdown-item" href="TCOCalculator.html">TCO Calculator</a>
+                  <a class="dropdown-item" href="AzurePolicies.html">Restrict Deployments with Azure Policies</a>
+                  <a class="dropdown-item" href="TimerTrigger.html">Timer Trigger</a>
+                  <a class="dropdown-item" href="HTTPTrigger.html">HTTP Trigger</a>
+                  <a class="dropdown-item" href="BlobTrigger.html">Blob Trigger</a>
+                  <a class="dropdown-item" href="ResourceLocks.html">Resource Locks</a>
+                  <a class="dropdown-item" href="WebsiteHostedOnAzure.html">Website Hosted on Azure</a>
+                  <a class="dropdown-item" href="BindingTypes.html">Binding Types</a>
+                  <a class="dropdown-item" href="InputBindings.html">Input Bindings</a>
+                  <a class="dropdown-item" href="OutputBindings.html">Output Bindings</a>
+                  <a class="dropdown-item" href="SQLonLinux.html">Deploy SQL Server on Linux</a>
+                  <a class="dropdown-item" href="DockerContainers.html">Docker Containers</a>
+                  <a class="dropdown-item" href="NetworkSecurityGroup.html">Network Security Group</a>
+                  <a class="dropdown-item" href="AzureKeyVault.html">Azure Key Vault</a>
+                  <a class="dropdown-item" href="SQLDatabase.html">SQL Database</a>
+                  <a class="dropdown-item" href="FunctionApp.html">Function App</a>
+                  <a class="dropdown-item" href="SQLonLinuxContainers.html">SQL Server on Linux Containers</a>
+                  <a class="dropdown-item" href="InstallPowershell.html">Powershell</a>
+                  <a class="dropdown-item" href="InstallAzureCLI.html">Azure CLI</a>
+                  
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Azure Research
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <!-- <a class="dropdown-item" href="index.html">Azure Fundamentals 1</a> -->
+                    <!-- <a class="dropdown-item" href="index.html">Azure Fundamentals 2</a> -->
+                    <!-- <a class="dropdown-item" href="index.html">Azure Fundamentals 3</a> -->
+                    <!-- <a class="dropdown-item" href="index.html">Azure Fundamentals 4</a> -->
+                    <!-- <a class="dropdown-item" href="index.html">Azure Fundamentals 5</a> -->
+                    <!-- <a class="dropdown-item" href="index.html">Azure Fundamentals 6</a> -->
+                    <!-- <a class="dropdown-item" href="index.html">Static Website Hosting</a> -->
+                    <!-- <a class="dropdown-item" href="index.html">Docker Container Networking</a> -->
+                    <!-- <a class="dropdown-item" href="index.html">...</a> -->
+                  </div>
+                </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Tasks
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <!-- <a class="dropdown-item" href="index.html">ICT HelpDesk (Rob)</a> -->
+                  <!-- <a class="dropdown-item" href="index.html">Linux Course Resources (Faisal)</a> -->
+                  <!-- <a class="dropdown-item" href="index.html">PC Maintenance (Rob)</a> -->
+                  <!-- <a class="dropdown-item" href="index.html">...</a> -->
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Reflections
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <!-- <a class="dropdown-item" href="S6Communication.html">Communication</a>
+                  <a class="dropdown-item" href="S6Documentation.html">Documentation</a>
+                  <a class="dropdown-item" href="S6TimeManagement.html">Time Management</a>
+                  <a class="dropdown-item" href="S6ResearchLearning.html">Research + Learning</a> -->
+                </div>
+              </li>
+        </ul>
+    </div>
+</nav>
+<hr>
+    <div class="container">
+        <h2 id="studio-6-">Studio 6 :</h2>
+<h1 id="input-binding-types">Input Binding Types</h1>
+
+<h4 id="azure-learn">Azure Learn</h4>
+
+<p>https://docs.microsoft.com/en-au/learn/modules/chain-azure-functions-data-using-bindings/5-read-data-with-input-bindings-portal-lab?pivots=javascript</p>
+
+<p><img src="images\Read data with input bindings\Screen Shot 2021-02-15 at 10.22.55 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Read data with input bindings\Screen Shot 2021-02-15 at 10.24.21 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Read data with input bindings\Screen Shot 2021-02-15 at 10.24.44 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Read data with input bindings\Screen Shot 2021-02-15 at 10.24.55 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Read data with input bindings\Screen Shot 2021-02-15 at 10.27.44 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Read data with input bindings\Screen Shot 2021-02-15 at 10.27.52 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Read data with input bindings\Screen Shot 2021-02-15 at 10.28.11 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Read data with input bindings\Screen Shot 2021-02-15 at 10.28.25 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Read data with input bindings\Screen Shot 2021-02-15 at 10.28.58 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Read data with input bindings\Screen Shot 2021-02-15 at 10.29.04 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Read data with input bindings\Screen Shot 2021-02-15 at 10.30.05 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Read data with input bindings\Screen Shot 2021-02-15 at 10.30.44 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Read data with input bindings\Screen Shot 2021-02-15 at 10.42.17 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Read data with input bindings\Screen Shot 2021-02-15 at 10.42.21 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Read data with input bindings\Screen Shot 2021-02-15 at 10.42.31 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Read data with input bindings\Screen Shot 2021-02-15 at 10.42.45 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Read data with input bindings\Screen Shot 2021-02-15 at 10.44.19 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Read data with input bindings\Screen Shot 2021-02-15 at 10.45.10 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Read data with input bindings\Screen Shot 2021-02-15 at 10.45.13 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Read data with input bindings\Screen Shot 2021-02-15 at 10.45.16 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Read data with input bindings\Screen Shot 2021-02-15 at 10.45.18 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Read data with input bindings\Screen Shot 2021-02-15 at 10.46.29 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Read data with input bindings\Screen Shot 2021-02-15 at 10.46.54 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Read data with input bindings\Screen Shot 2021-02-15 at 10.47.59 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Read data with input bindings\Screen Shot 2021-02-15 at 10.49.37 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Read data with input bindings\Screen Shot 2021-02-15 at 10.49.47 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Read data with input bindings\Screen Shot 2021-02-15 at 10.49.56 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Read data with input bindings\Screen Shot 2021-02-15 at 10.50.07 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Read data with input bindings\Screen Shot 2021-02-15 at 10.51.35 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Read data with input bindings\Screen Shot 2021-02-15 at 10.52.21 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Read data with input bindings\Screen Shot 2021-02-15 at 10.54.23 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Read data with input bindings\Screen Shot 2021-02-15 at 10.54.35 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Read data with input bindings\Screen Shot 2021-02-15 at 10.54.44 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Read data with input bindings\Screen Shot 2021-02-15 at 10.54.50 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Read data with input bindings\Screen Shot 2021-02-15 at 10.55.41 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Read data with input bindings\Screen Shot 2021-02-15 at 10.56.25 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Read data with input bindings\Screen Shot 2021-02-15 at 11.06.39 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Read data with input bindings\Screen Shot 2021-02-15 at 11.06.46 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Read data with input bindings\Screen Shot 2021-02-15 at 11.06.53 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Read data with input bindings\Screen Shot 2021-02-15 at 11.07.05 PM.png" alt="Image" title="Image" /></p>
+
+<p><img src="images\Read data with input bindings\Screen Shot 2021-02-15 at 11.07.10 PM.png" alt="Image" title="Image" /></p>
+
+    </div>
+
+    <hr>
+
+<footer>
+    <div class="container"></div>
+</footer>
+
+</body>
+
+</html>

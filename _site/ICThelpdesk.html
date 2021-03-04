@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <title>Jae Joo Studio Portfolio</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Jae Joo :: Portfolio :: Studio 6 (2021)</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02" aria-controls="navbarsExample02"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExample02">
+        <ul class="navbar-nav mr-auto">
+            <!-- <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home
+                    <span class="sr-only">(current)</span>
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Azure Learn (2020)
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="IoT.html">Azure Fundamentals</a>
+                <a class="dropdown-item" href="IoT.html">Introduction to Azure IoT</a>
+                <a class="dropdown-item" href="IoT.html">Introduction to Azure SQL</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Azure Research (2020)
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="AzureIoT.html">IoT</a>
+                  <a class="dropdown-item" href="AzureMariaDB.html">MariaDB</a>
+                  <a class="dropdown-item" href="SQLDB.html">SQL DB</a>
+                  <a class="dropdown-item" href="AzureVM.html">Azure VM</a>
+                  <a class="dropdown-item" href="AzureVnet.html">Azure Vnet</a>
+                  <a class="dropdown-item" href="AzureNIC.html">Azure NIC</a>
+                  <a class="dropdown-item" href="AzureDevTestLabs.html">Azure DevTestLabs</a>
+                  <a class="dropdown-item" href="AzurePowerShell.html">Azure Portal/PowerShell</a>
+                </div>
+              </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Studio5 Tasks
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="DBMigration.html">DB2/3 Migration (Krissi/Rob)</a>
+                  <a class="dropdown-item" href="DBUserAdding.html">DB2/3 User Adding (Rob)</a>
+                  <a class="dropdown-item" href="IoTSimulation.html">IoT Simulation (Research)</a>
+                  <a class="dropdown-item" href="DesktopMaintenance.html">Desktop Maintenance (Rob)</a>
+                  <a class="dropdown-item" href="LinuxConfiguration.html">Linux Configuration (Faisal)</a>
+                  <a class="dropdown-item" href="ImagingCloning.html">Imaging, Cloning (Hamish)</a>
+                  <a class="dropdown-item" href="SystemAudit.html">System Audit (Rob)</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Studio5 Reflection
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="S5Communication.html">Communication</a>
+                  <a class="dropdown-item" href="S5Documentation.html">Documentation</a>
+                  <a class="dropdown-item" href="S5TimeManagement.html">Time Management</a>
+                  <a class="dropdown-item" href="S5ResearchLearning.html">Research + Learning</a>
+                </div>
+              </li> -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Azure Learn
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="MEANStack.html">Build a MEAN Stack Web application on Linux VM</a>
+                  <a class="dropdown-item" href="AzureDevOps.html">Azure Dev Ops</a>
+                  <a class="dropdown-item" href="HostWebApp.html">Host Web App with Azure App Service</a>
+                  <a class="dropdown-item" href="CreateWindowsVM.html">Create a Windows VM</a>
+                  <a class="dropdown-item" href="TCOCalculator.html">TCO Calculator</a>
+                  <a class="dropdown-item" href="AzurePolicies.html">Restrict Deployments with Azure Policies</a>
+                  <a class="dropdown-item" href="TimerTrigger.html">Timer Trigger</a>
+                  <a class="dropdown-item" href="HTTPTrigger.html">HTTP Trigger</a>
+                  <a class="dropdown-item" href="BlobTrigger.html">Blob Trigger</a>
+                  <a class="dropdown-item" href="ResourceLocks.html">Resource Locks</a>
+                  <a class="dropdown-item" href="WebsiteHostedOnAzure.html">Website Hosted on Azure</a>
+                  <a class="dropdown-item" href="BindingTypes.html">Binding Types</a>
+                  <a class="dropdown-item" href="InputBindings.html">Input Bindings</a>
+                  <a class="dropdown-item" href="OutputBindings.html">Output Bindings</a>
+                  <a class="dropdown-item" href="SQLonLinux.html">Deploy SQL Server on Linux</a>
+                  <a class="dropdown-item" href="DockerContainers.html">Docker Containers</a>
+                  <a class="dropdown-item" href="NetworkSecurityGroup.html">Network Security Group</a>
+                  <a class="dropdown-item" href="AzureKeyVault.html">Azure Key Vault</a>
+                  <a class="dropdown-item" href="SQLDatabase.html">SQL Database</a>
+                  <a class="dropdown-item" href="FunctionApp.html">Function App</a>
+                  <a class="dropdown-item" href="SQLonLinuxContainers.html">SQL Server on Linux Containers</a>
+                  <a class="dropdown-item" href="InstallPowershell.html">Powershell</a>
+                  <a class="dropdown-item" href="InstallAzureCLI.html">Azure CLI</a>
+                  
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Azure Research
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <!-- <a class="dropdown-item" href="index.html">Azure Fundamentals 1</a> -->
+                    <!-- <a class="dropdown-item" href="index.html">Azure Fundamentals 2</a> -->
+                    <!-- <a class="dropdown-item" href="index.html">Azure Fundamentals 3</a> -->
+                    <!-- <a class="dropdown-item" href="index.html">Azure Fundamentals 4</a> -->
+                    <!-- <a class="dropdown-item" href="index.html">Azure Fundamentals 5</a> -->
+                    <!-- <a class="dropdown-item" href="index.html">Azure Fundamentals 6</a> -->
+                    <a class="dropdown-item" href="StaticWebApp.html">Azure Static Website App</a>
+                    <!-- <a class="dropdown-item" href="index.html">Docker Container Networking</a> -->
+                    <!-- <a class="dropdown-item" href="index.html">...</a> -->
+                  </div>
+                </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Tasks
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="ICThelpdesk.html">ICT HelpDesk (Rob)</a>
+                  <!-- <a class="dropdown-item" href="index.html">Linux Course Resources (Faisal)</a> -->
+                  <!-- <a class="dropdown-item" href="index.html">PC Maintenance (Rob)</a> -->
+                  <!-- <a class="dropdown-item" href="index.html">...</a> -->
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Reflections
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <!-- <a class="dropdown-item" href="S6Communication.html">Communication</a>
+                  <a class="dropdown-item" href="S6Documentation.html">Documentation</a>
+                  <a class="dropdown-item" href="S6TimeManagement.html">Time Management</a>
+                  <a class="dropdown-item" href="S6ResearchLearning.html">Research + Learning</a> -->
+                </div>
+              </li>
+        </ul>
+    </div>
+</nav>
+<hr>
+    <div class="container">
+        <h2 id="studio-6-">Studio 6 :</h2>
+<h1 id="ict-helpdesk-migration">ICT Helpdesk Migration</h1>
+
+<h4 id="clients-requests">Client’s Requests</h4>
+
+<p>Job assigned <strong>March 1</strong>
+Due Date <strong>April 9</strong></p>
+
+<p>Rob requires the ICT helpdesk site (https://help.ict.op.ac.nz) to be migrated from the current server (fthictweb08@ict.op.ac.nz) to the Azure infrastructure.
+the ICT helpdesk website contents are currently being stored in a GitHub repository.</p>
+
+<p><img src="images\ICT Helpdesk Migration\Screenshot 2021-03-04 144915.png" alt="Image" title="Image" /></p>
+
+<h4 id="summary">Summary</h4>
+
+<p>Task in progress…</p>
+
+<h4 id="reflection">Reflection</h4>
+
+<ul>
+  <li>
+    <p><strong>Research</strong> + Learning - Gained understanding of a new Azure Resource (Static Web App) for hosting a simple website.
+This is a lightweight PaaS solution opposed to a IaaS solution with a VM and web hosting software.</p>
+  </li>
+  <li>
+    <p><strong>Communication</strong> - Communication with teammate (Rohill) was effective and coordination was well executed.
+Liason with Rob and Faisal was timely and concise. We reported our progress as much as possible and consulted Rob about the possible solution.</p>
+  </li>
+  <li>
+    <p><strong>Documentation</strong> - A Proposal Report documenting the summary of research was created. Further documentation about the Static Web App migration was created and store on the DevOps Team Documentation for future reference.</p>
+  </li>
+  <li>
+    <p><strong>Time Management</strong> -</p>
+  </li>
+</ul>
+
+<p>Task in progress…</p>
+
+<h4 id="worklog">Worklog</h4>
+
+<p>Working with <strong>Rohill Nand</strong></p>
+
+<h6 id="march-1">March 1</h6>
+
+<p>The website needs a simple web hosting platform solution. A separate VM is too heavy for a small website.
+Azure Cloud Service provides <strong>Azure Static Web App</strong> Resource which allows hosting of a website which can also be linked to a GitHub Repository.</p>
+
+<p><strong>Azure Static Web App Diagram</strong></p>
+
+<p><img src="images\ICT Helpdesk Migration\Screen Shot 2021-03-02 at 10.16.14 PM.png" alt="Image" title="Image" /></p>
+
+<p>Research was conducted and Azure Static Web App was determined to be the best solution as it is lightweight and free.
+A small linux VM was a unfavourable alternative.</p>
+
+<p><strong>Resource Creation Fail</strong></p>
+
+<p><img src="images\ICT Helpdesk Migration\StaticWebApp Resource Creation Fail.png" alt="Image" title="Image" /></p>
+
+<p>ICT Helpdesk resource group was allocated to Rohill and I by Faisal.
+However we did not have permissions to create a new static web app resource.
+Faisal requested a proposal report to justify the possible solution.</p>
+
+<h6 id="march-4">March 4</h6>
+
+<p>Rohill and I drafted a solution Proposal report and submitted it to Faisal and Rob.</p>
+
+<p><strong>Solution Proposal</strong></p>
+
+<p><img src="images\ICT Helpdesk Migration\Screenshot 2021-03-04 143548.png" alt="Image" title="Image" /></p>
+
+<p>We received approval of the solution from Rob.</p>
+
+<p><img src="images\ICT Helpdesk Migration\Screenshot 2021-03-04 150651.png" alt="Image" title="Image" /></p>
+
+<p>However we need to create the Static Web App resource with Rob’s authorisation level.</p>
+
+<p><img src="images\ICT Helpdesk Migration\Screenshot 2021-03-04 150730.png" alt="Image" title="Image" /></p>
+
+<h6 id="march-8">March 8</h6>
+
+<p>** Planning to start building the website after resource creation with Rob…</p>
+
+    </div>
+
+    <hr>
+
+<footer>
+    <div class="container"></div>
+</footer>
+
+</body>
+
+</html>

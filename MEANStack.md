@@ -11,6 +11,18 @@ description: Build and run a web application with the MEAN stack on an Azure Lin
 
 https://docs.microsoft.com/en-au/learn/modules/build-a-web-app-with-mean-on-a-linux-vm/
 
+**This is a potential template for Studio Teams working on a Web Project to follow.**
+
+The DevOps team could be more actively involved in supporting Web Projects with this layout.
+
+A VM could be easily created and allocated by the DevOps team with the necessary development software installed to begin a web project.
+
+**The DevOps team can conduct regular maintenance, backups, restore drills and updates of the VM. Deployment of the code in a pipeline could be managed also.**
+
+It is important for DevOps teams to understand the necessary components of full stack development and how these resources can be provided by them through Azure.
+
+This demo will demonstrate the basic configurations and setup procedures with demo code.
+
 ![Image](images\Build and run a web application with the MEAN stack on an Azure Linux virtual machine\Screen Shot 2021-01-25 at 9.32.58 PM.png "Image")
 
 A Linux machine is created with the following command on Azure CLI

@@ -31,12 +31,12 @@
 
     <div class="collapse navbar-collapse" id="navbarsExample02">
         <ul class="navbar-nav mr-auto">
-            <!-- <li class="nav-item active">
+            <li class="nav-item active">
                 <a class="nav-link" href="index.html">Home
                     <span class="sr-only">(current)</span>
                 </a>
             </li>
-            <li class="nav-item dropdown">
+            <!-- <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Azure Learn (2020)
               </a>
@@ -114,7 +114,6 @@
                   <a class="dropdown-item" href="SQLonLinuxContainers.html">SQL Server on Linux Containers</a>
                   <a class="dropdown-item" href="InstallPowershell.html">Powershell</a>
                   <a class="dropdown-item" href="InstallAzureCLI.html">Azure CLI</a>
-                  
                 </div>
               </li>
               <li class="nav-item dropdown">
@@ -129,7 +128,9 @@
                     <!-- <a class="dropdown-item" href="index.html">Azure Fundamentals 5</a> -->
                     <!-- <a class="dropdown-item" href="index.html">Azure Fundamentals 6</a> -->
                     <a class="dropdown-item" href="StaticWebApp.html">Azure Static Website App</a>
+                    <!-- <a class="dropdown-item" href="index.html">Linux Docker Container Compose</a> -->
                     <!-- <a class="dropdown-item" href="index.html">Docker Container Networking</a> -->
+                    <!-- <a class="dropdown-item" href="index.html">Powershell Scripts for Linux Containers</a> -->
                     <!-- <a class="dropdown-item" href="index.html">...</a> -->
                   </div>
                 </li>
@@ -167,57 +168,115 @@
 
 <p>https://docs.microsoft.com/en-au/learn/modules/run-sql-server-2017-linux-containers/3-create-custom-images</p>
 
+<p>In SQL Server 2019, you can choose to run a database server on Linux or Windows. Also, you can decide to run a database on a physical server, or in a virtual environment like a Virtual Machine (VM) or a container.</p>
+
+<p>Suppose you want to make it easier to deploy database servers into the testing environment for your photo-sharing application. You need to provide clean sample databases for integration and acceptance testing as quickly as possible. Because the production environment is hosted on Linux servers, you want the testing environment to run Linux too.</p>
+
+<p><strong>DB3 resources will include SQL Docker containers for Students to maintain.</strong></p>
+
+<p>It will be important to understand these procedures to setup SQL docker containers to participate in creating that Azure Service.</p>
+
 <p><img src="images\Run SQL Server 2019 on Linux containers\Screen Shot 2021-02-02 at 9.53.23 PM.png" alt="Image" title="Image" /></p>
+
+<p><strong>Create a random password and use it when creating a Ubuntu Server VM</strong></p>
 
 <p><img src="images\Run SQL Server 2019 on Linux containers\Screen Shot 2021-02-02 at 9.55.16 PM.png" alt="Image" title="Image" /></p>
 
+<p><strong>The Ip address of the VM is stored in a variable</strong></p>
+
+<p><strong>The password of the VM is as follows</strong></p>
+
 <p><img src="images\Run SQL Server 2019 on Linux containers\Screen Shot 2021-02-02 at 9.56.52 PM.png" alt="Image" title="Image" /></p>
 
+<p><strong>Use this information to SSH to the VM</strong></p>
+
 <p><img src="images\Run SQL Server 2019 on Linux containers\Screen Shot 2021-02-02 at 9.57.11 PM.png" alt="Image" title="Image" /></p>
+
+<p><strong>Run an update and install packages that allow apt to use a repository over HTTPS, type the following command, and then press Enter</strong></p>
 
 <p><img src="images\Run SQL Server 2019 on Linux containers\Screen Shot 2021-02-02 at 9.57.44 PM.png" alt="Image" title="Image" /></p>
 
 <p><img src="images\Run SQL Server 2019 on Linux containers\Screen Shot 2021-02-02 at 9.57.46 PM.png" alt="Image" title="Image" /></p>
 
+<p><strong>To add the Docker GPG key, type the following command, and then press Enter</strong></p>
+
 <p><img src="images\Run SQL Server 2019 on Linux containers\Screen Shot 2021-02-02 at 9.58.16 PM.png" alt="Image" title="Image" /></p>
+
+<p><strong>To add install packages that allow apt to use a repository over HTTPS, type the following command, and then press Enter</strong></p>
 
 <p><img src="images\Run SQL Server 2019 on Linux containers\Screen Shot 2021-02-02 at 9.58.28 PM.png" alt="Image" title="Image" /></p>
 
 <p><img src="images\Run SQL Server 2019 on Linux containers\Screen Shot 2021-02-02 at 9.58.39 PM.png" alt="Image" title="Image" /></p>
 
+<p><strong>Update and install Docker, type the following command, and then press Enter</strong></p>
+
 <p><img src="images\Run SQL Server 2019 on Linux containers\Screen Shot 2021-02-02 at 9.58.49 PM.png" alt="Image" title="Image" /></p>
 
 <p><img src="images\Run SQL Server 2019 on Linux containers\Screen Shot 2021-02-02 at 9.59.27 PM.png" alt="Image" title="Image" /></p>
 
+<p><strong>When installation is complete, check the status of the Docker service</strong></p>
+
 <p><img src="images\Run SQL Server 2019 on Linux containers\Screen Shot 2021-02-02 at 9.59.31 PM.png" alt="Image" title="Image" /></p>
+
+<p><strong>To automatically start Docker when the system boots up, type the following command, and then press Enter</strong></p>
 
 <p><img src="images\Run SQL Server 2019 on Linux containers\Screen Shot 2021-02-02 at 9.59.42 PM.png" alt="Image" title="Image" /></p>
 
 <p><img src="images\Run SQL Server 2019 on Linux containers\Screen Shot 2021-02-02 at 9.59.49 PM.png" alt="Image" title="Image" /></p>
 
+<p><strong>Now we have a Linux VM and docker installed, in the terminal, to pull the SQL Server container image, type the following command, and then press Enter</strong></p>
+
 <p><img src="images\Run SQL Server 2019 on Linux containers\Screen Shot 2021-02-02 at 9.59.56 PM.png" alt="Image" title="Image" /></p>
 
 <p><img src="images\Run SQL Server 2019 on Linux containers\Screen Shot 2021-02-02 at 10.00.29 PM.png" alt="Image" title="Image" /></p>
+
+<p><strong>In the terminal, to run the SQL Server container image, type the following command, and then press Enter</strong></p>
 
 <p><img src="images\Run SQL Server 2019 on Linux containers\Screen Shot 2021-02-02 at 10.03.20 PM.png" alt="Image" title="Image" /></p>
 
 <p><img src="images\Run SQL Server 2019 on Linux containers\Screen Shot 2021-02-02 at 10.03.30 PM.png" alt="Image" title="Image" /></p>
 
+<p><strong>When the image is downloaded and the container started, you check that SQL Server is running in the new container. Type the following command, and then press Enter</strong></p>
+
 <p><img src="images\Run SQL Server 2019 on Linux containers\Screen Shot 2021-02-02 at 10.03.38 PM.png" alt="Image" title="Image" /></p>
 
+<p><strong>In the Cloud Shell, To start the bash shell within the new container, type the following command, and then press Enter</strong></p>
+
 <p><img src="images\Run SQL Server 2019 on Linux containers\Screen Shot 2021-02-02 at 10.03.50 PM.png" alt="Image" title="Image" /></p>
+
+<p><strong>To start the sqlcmd tool, type the following command, and then press Enter</strong></p>
 
 <p><img src="images\Run SQL Server 2019 on Linux containers\Screen Shot 2021-02-02 at 10.04.13 PM.png" alt="Image" title="Image" /></p>
 
 <p><img src="images\Run SQL Server 2019 on Linux containers\Screen Shot 2021-02-02 at 10.04.19 PM.png" alt="Image" title="Image" /></p>
 
+<p><strong>You are now in SQL inside the container. To query the database server, type the following commands, and then press Enter</strong></p>
+
 <p><img src="images\Run SQL Server 2019 on Linux containers\Screen Shot 2021-02-02 at 10.04.34 PM.png" alt="Image" title="Image" /></p>
+
+<p><strong>List all container images</strong></p>
+
+<p><strong>Stopping the container</strong></p>
 
 <p><img src="images\Run SQL Server 2019 on Linux containers\Screen Shot 2021-02-02 at 10.05.36 PM.png" alt="Image" title="Image" /></p>
 
+<p><strong>You can check the container has stopped with “sudo docker ps -a”</strong></p>
+
+<p><strong>We will also remove the container</strong></p>
+
 <p><img src="images\Run SQL Server 2019 on Linux containers\Screen Shot 2021-02-02 at 10.05.51 PM.png" alt="Image" title="Image" /></p>
 
+<p><strong>You can automate the startup of multiple Docker images by using a container orchestrator package, such as Docker Compose.</strong></p>
+
+<p><strong>To download Docker Compose, type the following command, and then press Enter</strong></p>
+
 <p><img src="images\Run SQL Server 2019 on Linux containers\Screen Shot 2021-02-02 at 10.07.08 PM.png" alt="Image" title="Image" /></p>
+
+<p><strong>To mark the downloaded file as executable, type the following command, and then press Enter</strong></p>
+
+<p><strong>To create a link to the downloaded executable, type the following command, and then press Enter</strong></p>
+
+<p><strong>In the Cloud Shell on the left, to clone the GitHub repo in the Ubuntu VM, run this command</strong></p>
 
 <p><img src="images\Run SQL Server 2019 on Linux containers\Screen Shot 2021-02-02 at 10.07.30 PM.png" alt="Image" title="Image" /></p>
 
@@ -226,6 +285,8 @@
 <p><img src="images\Run SQL Server 2019 on Linux containers\Screen Shot 2021-02-02 at 10.09.15 PM.png" alt="Image" title="Image" /></p>
 
 <p><img src="images\Run SQL Server 2019 on Linux containers\Screen Shot 2021-02-02 at 10.09.29 PM.png" alt="Image" title="Image" /></p>
+
+<p><strong>In the terminal, type the following command, and then press Enter</strong></p>
 
 <p><img src="images\Run SQL Server 2019 on Linux containers\Screen Shot 2021-02-02 at 10.11.17 PM.png" alt="Image" title="Image" /></p>
 

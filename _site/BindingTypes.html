@@ -31,12 +31,12 @@
 
     <div class="collapse navbar-collapse" id="navbarsExample02">
         <ul class="navbar-nav mr-auto">
-            <!-- <li class="nav-item active">
+            <li class="nav-item active">
                 <a class="nav-link" href="index.html">Home
                     <span class="sr-only">(current)</span>
                 </a>
             </li>
-            <li class="nav-item dropdown">
+            <!-- <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Azure Learn (2020)
               </a>
@@ -114,7 +114,6 @@
                   <a class="dropdown-item" href="SQLonLinuxContainers.html">SQL Server on Linux Containers</a>
                   <a class="dropdown-item" href="InstallPowershell.html">Powershell</a>
                   <a class="dropdown-item" href="InstallAzureCLI.html">Azure CLI</a>
-                  
                 </div>
               </li>
               <li class="nav-item dropdown">
@@ -129,7 +128,9 @@
                     <!-- <a class="dropdown-item" href="index.html">Azure Fundamentals 5</a> -->
                     <!-- <a class="dropdown-item" href="index.html">Azure Fundamentals 6</a> -->
                     <a class="dropdown-item" href="StaticWebApp.html">Azure Static Website App</a>
+                    <!-- <a class="dropdown-item" href="index.html">Linux Docker Container Compose</a> -->
                     <!-- <a class="dropdown-item" href="index.html">Docker Container Networking</a> -->
+                    <!-- <a class="dropdown-item" href="index.html">Powershell Scripts for Linux Containers</a> -->
                     <!-- <a class="dropdown-item" href="index.html">...</a> -->
                   </div>
                 </li>
@@ -167,6 +168,12 @@
 
 <p>https://docs.microsoft.com/en-au/learn/modules/chain-azure-functions-data-using-bindings/3-explore-input-and-output-binding-types-portal-lab?pivots=javascript</p>
 
+<p>In Azure Functions, bindings provide a declarative way to connect to data from within your code. <strong>They make it easier to integrate with data streams consistently in a function.</strong> You can have multiple bindings providing access to different data elements. This is powerful because you can connect to your data sources without having to code specific connection logic (like database connections or web API interfaces).</p>
+
+<p><strong>There are input and output bindings. They are a connection to a data source and destination.</strong></p>
+
+<p>You must create a Function App first.</p>
+
 <p><img src="images\Explore input and output binding types\Screen Shot 2021-02-15 at 10.09.27 PM.png" alt="Image" title="Image" /></p>
 
 <p><img src="images\Explore input and output binding types\Screen Shot 2021-02-15 at 10.10.48 PM.png" alt="Image" title="Image" /></p>
@@ -180,6 +187,8 @@
 <p><img src="images\Explore input and output binding types\Screen Shot 2021-02-15 at 10.13.56 PM.png" alt="Image" title="Image" /></p>
 
 <p><img src="images\Explore input and output binding types\Screen Shot 2021-02-15 at 10.14.04 PM.png" alt="Image" title="Image" /></p>
+
+<p><strong>This function will trigger with a HTTP request.</strong></p>
 
 <p><img src="images\Explore input and output binding types\Screen Shot 2021-02-15 at 10.14.12 PM.png" alt="Image" title="Image" /></p>
 
@@ -209,9 +218,13 @@
 
 <p><img src="images\Explore input and output binding types\Screen Shot 2021-02-15 at 10.19.56 PM.png" alt="Image" title="Image" /></p>
 
+<p><strong>The input is a HTTP request triggering the function and the result is displayed by HTTP</strong></p>
+
 <p><img src="images\Explore input and output binding types\Screen Shot 2021-02-15 at 10.20.10 PM.png" alt="Image" title="Image" /></p>
 
 <p><img src="images\Explore input and output binding types\Screen Shot 2021-02-15 at 10.20.53 PM.png" alt="Image" title="Image" /></p>
+
+<p><strong>More binding types are explored on other pages</strong></p>
 
 <p><img src="images\Explore input and output binding types\Screen Shot 2021-02-15 at 10.21.35 PM.png" alt="Image" title="Image" /></p>
 

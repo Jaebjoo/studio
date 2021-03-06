@@ -31,12 +31,12 @@
 
     <div class="collapse navbar-collapse" id="navbarsExample02">
         <ul class="navbar-nav mr-auto">
-            <!-- <li class="nav-item active">
+            <li class="nav-item active">
                 <a class="nav-link" href="index.html">Home
                     <span class="sr-only">(current)</span>
                 </a>
             </li>
-            <li class="nav-item dropdown">
+            <!-- <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Azure Learn (2020)
               </a>
@@ -114,7 +114,6 @@
                   <a class="dropdown-item" href="SQLonLinuxContainers.html">SQL Server on Linux Containers</a>
                   <a class="dropdown-item" href="InstallPowershell.html">Powershell</a>
                   <a class="dropdown-item" href="InstallAzureCLI.html">Azure CLI</a>
-                  
                 </div>
               </li>
               <li class="nav-item dropdown">
@@ -129,7 +128,9 @@
                     <!-- <a class="dropdown-item" href="index.html">Azure Fundamentals 5</a> -->
                     <!-- <a class="dropdown-item" href="index.html">Azure Fundamentals 6</a> -->
                     <a class="dropdown-item" href="StaticWebApp.html">Azure Static Website App</a>
+                    <!-- <a class="dropdown-item" href="index.html">Linux Docker Container Compose</a> -->
                     <!-- <a class="dropdown-item" href="index.html">Docker Container Networking</a> -->
+                    <!-- <a class="dropdown-item" href="index.html">Powershell Scripts for Linux Containers</a> -->
                     <!-- <a class="dropdown-item" href="index.html">...</a> -->
                   </div>
                 </li>
@@ -167,9 +168,25 @@
 
 <p>https://docs.microsoft.com/en-us/learn/modules/protect-against-security-threats-azure/5-manage-password-key-vault</p>
 
+<p>Key vault can:</p>
+
+<ul>
+  <li>Manage secrets, passwords, certificates, API keys</li>
+  <li>Manage Encryption Keys</li>
+  <li>Manage SSL/TLS certificates</li>
+</ul>
+
+<p><strong>This offers a centralised storage and allows simplified monitoring access and administration. It can also be integrated with other services that need to reference secrets stored in Key Vault.</strong></p>
+
+<p><strong>This maybe an alternative for the Keypass files used to access the VMs in Studio</strong></p>
+
+<p>Key Vault can be found in the market place.</p>
+
 <p><img src="images\Azure Key Vault\Screen Shot 2021-01-21 at 7.30.13 PM.png" alt="Image" title="Image" /></p>
 
 <p><img src="images\Azure Key Vault\Screen Shot 2021-01-21 at 7.32.22 PM.png" alt="Image" title="Image" /></p>
+
+<p><strong>The Vault URI field shows the URI that applications use to access the vault.</strong></p>
 
 <p><img src="images\Azure Key Vault\Screen Shot 2021-01-21 at 7.32.28 PM.png" alt="Image" title="Image" /></p>
 
@@ -178,6 +195,8 @@
 <p><img src="images\Azure Key Vault\Screen Shot 2021-01-21 at 7.37.12 PM.png" alt="Image" title="Image" /></p>
 
 <p><img src="images\Azure Key Vault\Screen Shot 2021-01-21 at 7.37.20 PM.png" alt="Image" title="Image" /></p>
+
+<p><strong>We will create a new secret, which will be a password.</strong></p>
 
 <p><img src="images\Azure Key Vault\Screen Shot 2021-01-21 at 7.38.07 PM.png" alt="Image" title="Image" /></p>
 
@@ -193,9 +212,9 @@
 
 <p><img src="images\Azure Key Vault\Screen Shot 2021-01-21 at 7.40.52 PM.png" alt="Image" title="Image" /></p>
 
-<p><img src="images\Azure Key Vault\Screen Shot 2021-01-21 at 7.42.14 PM.png" alt="Image" title="Image" /></p>
+<p><strong>From the Cloud Shell pane to the side of the screen, run this command.</strong></p>
 
-<p><img src="images\Azure Key Vault\Screen Shot 2021-01-21 at 7.42.27 PM.png" alt="Image" title="Image" /></p>
+<p><img src="images\Azure Key Vault\Screen Shot 2021-01-21 at 7.42.14 PM.png" alt="Image" title="Image" /></p>
 
     </div>
 

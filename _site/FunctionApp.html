@@ -31,12 +31,12 @@
 
     <div class="collapse navbar-collapse" id="navbarsExample02">
         <ul class="navbar-nav mr-auto">
-            <!-- <li class="nav-item active">
+            <li class="nav-item active">
                 <a class="nav-link" href="index.html">Home
                     <span class="sr-only">(current)</span>
                 </a>
             </li>
-            <li class="nav-item dropdown">
+            <!-- <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Azure Learn (2020)
               </a>
@@ -114,7 +114,6 @@
                   <a class="dropdown-item" href="SQLonLinuxContainers.html">SQL Server on Linux Containers</a>
                   <a class="dropdown-item" href="InstallPowershell.html">Powershell</a>
                   <a class="dropdown-item" href="InstallAzureCLI.html">Azure CLI</a>
-                  
                 </div>
               </li>
               <li class="nav-item dropdown">
@@ -129,7 +128,9 @@
                     <!-- <a class="dropdown-item" href="index.html">Azure Fundamentals 5</a> -->
                     <!-- <a class="dropdown-item" href="index.html">Azure Fundamentals 6</a> -->
                     <a class="dropdown-item" href="StaticWebApp.html">Azure Static Website App</a>
+                    <!-- <a class="dropdown-item" href="index.html">Linux Docker Container Compose</a> -->
                     <!-- <a class="dropdown-item" href="index.html">Docker Container Networking</a> -->
+                    <!-- <a class="dropdown-item" href="index.html">Powershell Scripts for Linux Containers</a> -->
                     <!-- <a class="dropdown-item" href="index.html">...</a> -->
                   </div>
                 </li>
@@ -167,6 +168,12 @@
 
 <p>https://docs.microsoft.com/en-au/learn/modules/create-serverless-logic-with-azure-functions/3-create-an-azure-functions-app-in-the-azure-portal?pivots=javascript</p>
 
+<p><strong>Functions are hosted in an execution context called a function app. You define function apps to logically group and structure your functions and a compute resource in Azure.</strong></p>
+
+<p>Essentially, Azure allows you to use Functions app to run, code, logic without a VM.</p>
+
+<p>You can find Functions App in the Marketplace.</p>
+
 <p><img src="images\Create a function app in the Azure portal\Screen Shot 2021-01-31 at 7.52.47 PM.png" alt="Image" title="Image" /></p>
 
 <p><img src="images\Create a function app in the Azure portal\Screen Shot 2021-01-31 at 7.52.59 PM.png" alt="Image" title="Image" /></p>
@@ -174,6 +181,8 @@
 <p><img src="images\Create a function app in the Azure portal\Screen Shot 2021-01-31 at 7.53.04 PM.png" alt="Image" title="Image" /></p>
 
 <p><img src="images\Create a function app in the Azure portal\Screen Shot 2021-01-31 at 7.54.22 PM.png" alt="Image" title="Image" /></p>
+
+<p><strong>Functions can be triggered to run upon a certain event, and also have bindings which are data input and output connections from a source or destination.</strong></p>
 
 <p><img src="images\Create a function app in the Azure portal\Screen Shot 2021-01-31 at 7.57.31 PM.png" alt="Image" title="Image" /></p>
 
@@ -187,11 +196,15 @@
 
 <p><img src="images\Create a function app in the Azure portal\Screen Shot 2021-01-31 at 8.07.59 PM.png" alt="Image" title="Image" /></p>
 
+<p><strong>In this example we will add a HTTP trigger, that will trigger the function with a HTTP request.</strong></p>
+
 <p><img src="images\Create a function app in the Azure portal\Screen Shot 2021-01-31 at 8.08.15 PM.png" alt="Image" title="Image" /></p>
 
 <p><img src="images\Create a function app in the Azure portal\Screen Shot 2021-01-31 at 8.08.22 PM.png" alt="Image" title="Image" /></p>
 
 <p><img src="images\Create a function app in the Azure portal\Screen Shot 2021-01-31 at 8.08.27 PM.png" alt="Image" title="Image" /></p>
+
+<p><strong>You can view the code for this HTTP Trigger here</strong></p>
 
 <p><img src="images\Create a function app in the Azure portal\Screen Shot 2021-01-31 at 8.08.58 PM.png" alt="Image" title="Image" /></p>
 
@@ -225,7 +238,11 @@
 
 <p><img src="images\Create a function app in the Azure portal\Screen Shot 2021-01-31 at 8.18.50 PM.png" alt="Image" title="Image" /></p>
 
+<p><strong>In this example code, the function will have readings for devices and display a message corresponding to the temperature readings</strong></p>
+
 <p><img src="images\Create a function app in the Azure portal\Screen Shot 2021-01-31 at 8.33.49 PM.png" alt="Image" title="Image" /></p>
+
+<p><strong>We will pass the following Readings as a POST</strong></p>
 
 <p><img src="images\Create a function app in the Azure portal\Screen Shot 2021-01-31 at 8.33.56 PM.png" alt="Image" title="Image" /></p>
 
@@ -235,9 +252,15 @@
 
 <p><img src="images\Create a function app in the Azure portal\Screen Shot 2021-01-31 at 8.34.20 PM.png" alt="Image" title="Image" /></p>
 
+<p><strong>When this POST was processed by the function, which triggered with the POST request, the messages corresponding to the temperature readings were displayed.</strong></p>
+
+<p><strong>This can be further extended with output bindings if required to send data to a database holding the status of all devices.</strong></p>
+
 <p><img src="images\Create a function app in the Azure portal\Screen Shot 2021-01-31 at 8.34.28 PM.png" alt="Image" title="Image" /></p>
 
 <p><img src="images\Create a function app in the Azure portal\Screen Shot 2021-01-31 at 8.34.32 PM.png" alt="Image" title="Image" /></p>
+
+<p><strong>The function works successully</strong></p>
 
 <p><img src="images\Create a function app in the Azure portal\Screen Shot 2021-01-31 at 8.34.52 PM.png" alt="Image" title="Image" /></p>
 

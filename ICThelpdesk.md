@@ -20,7 +20,7 @@ the ICT helpdesk website contents are currently being stored in a GitHub reposit
 
 #### Summary
 
-Task in progress...
+<!-- Task in progress... -->
 
 #### Reflection
 
@@ -34,7 +34,7 @@ Liason with Rob and Faisal was timely and concise. We reported our progress as m
 
 * **Time Management** - 
 
-Task in progress...
+<!-- Task in progress... -->
 
 #### Worklog
 

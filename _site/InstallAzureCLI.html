@@ -31,12 +31,12 @@
 
     <div class="collapse navbar-collapse" id="navbarsExample02">
         <ul class="navbar-nav mr-auto">
-            <!-- <li class="nav-item active">
+            <li class="nav-item active">
                 <a class="nav-link" href="index.html">Home
                     <span class="sr-only">(current)</span>
                 </a>
             </li>
-            <li class="nav-item dropdown">
+            <!-- <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Azure Learn (2020)
               </a>
@@ -114,7 +114,6 @@
                   <a class="dropdown-item" href="SQLonLinuxContainers.html">SQL Server on Linux Containers</a>
                   <a class="dropdown-item" href="InstallPowershell.html">Powershell</a>
                   <a class="dropdown-item" href="InstallAzureCLI.html">Azure CLI</a>
-                  
                 </div>
               </li>
               <li class="nav-item dropdown">
@@ -129,7 +128,9 @@
                     <!-- <a class="dropdown-item" href="index.html">Azure Fundamentals 5</a> -->
                     <!-- <a class="dropdown-item" href="index.html">Azure Fundamentals 6</a> -->
                     <a class="dropdown-item" href="StaticWebApp.html">Azure Static Website App</a>
+                    <!-- <a class="dropdown-item" href="index.html">Linux Docker Container Compose</a> -->
                     <!-- <a class="dropdown-item" href="index.html">Docker Container Networking</a> -->
+                    <!-- <a class="dropdown-item" href="index.html">Powershell Scripts for Linux Containers</a> -->
                     <!-- <a class="dropdown-item" href="index.html">...</a> -->
                   </div>
                 </li>
@@ -167,7 +168,15 @@
 
 <p>https://docs.microsoft.com/en-au/learn/modules/control-azure-services-with-cli/3-exercise-install-and-run-the-azure-cli?pivots=macos</p>
 
+<p><strong>The Azure CLI is a command-line program to connect to Azure and execute administrative commands on Azure resources.</strong> It runs on Linux, macOS, and Windows and allows administrators and developers to execute their commands through a terminal or command-line prompt (or script!) instead of a web browser.</p>
+
+<p>Learning how to use this tool will be useful for scripts and navigating through the Azure infrastructure quickly without the Portal.</p>
+
+<p><strong>The deployment of the website below is also potentially a solution for the ICT Helpdesk Website</strong></p>
+
 <p><img src="images\Install and run the Azure CLI\Screen Shot 2021-02-09 at 2.34.50 PM.png" alt="Image" title="Image" /></p>
+
+<p><strong>Update your brew repository to make sure you get the latest Azure CLI package</strong></p>
 
 <p><img src="images\Install and run the Azure CLI\Screen Shot 2021-02-09 at 2.35.50 PM.png" alt="Image" title="Image" /></p>
 
@@ -175,37 +184,61 @@
 
 <p><img src="images\Install and run the Azure CLI\Screen Shot 2021-02-09 at 2.39.44 PM.png" alt="Image" title="Image" /></p>
 
+<p><strong>Install the Azure CLI</strong></p>
+
 <p><img src="images\Install and run the Azure CLI\Screen Shot 2021-02-09 at 2.41.15 PM.png" alt="Image" title="Image" /></p>
 
+<p><strong>Start the Azure CLI and verify your installation by running the version check</strong></p>
+
 <p><img src="images\Install and run the Azure CLI\Screen Shot 2021-02-09 at 2.41.54 PM.png" alt="Image" title="Image" /></p>
+
+<p><strong>These are some example commands that can be used on the CLI</strong></p>
 
 <p><img src="images\Install and run the Azure CLI\Screen Shot 2021-02-09 at 2.43.07 PM.png" alt="Image" title="Image" /></p>
 
 <p><img src="images\Install and run the Azure CLI\Screen Shot 2021-02-09 at 2.48.51 PM.png" alt="Image" title="Image" /></p>
 
+<p><strong>create several variables that you will use in later commands</strong></p>
+
 <p><img src="images\Install and run the Azure CLI\Screen Shot 2021-02-09 at 2.48.58 PM.png" alt="Image" title="Image" /></p>
 
 <p><img src="images\Install and run the Azure CLI\Screen Shot 2021-02-09 at 2.49.13 PM.png" alt="Image" title="Image" /></p>
 
+<p><strong>Create an App Service plan to run your app. The following command specifies the free pricing tier, but you can run az appservice plan create –help to see the other pricing tiers</strong></p>
+
 <p><img src="images\Install and run the Azure CLI\Screen Shot 2021-02-09 at 2.50.00 PM.png" alt="Image" title="Image" /></p>
 
+<p><strong>Verify that the service plan was created successfully by listing all your plans in a table</strong></p>
+
 <p><img src="images\Install and run the Azure CLI\Screen Shot 2021-02-09 at 2.50.28 PM.png" alt="Image" title="Image" /></p>
+
+<p><strong>To create the web app, you’ll supply web app name and the name of the app plan you created above. Just like the app plan name, the web app name must be unique, and the variables that you created earlier will assign random values that should be sufficient for this exercise</strong></p>
 
 <p><img src="images\Install and run the Azure CLI\Screen Shot 2021-02-09 at 2.53.24 PM.png" alt="Image" title="Image" /></p>
 
 <p><img src="images\Install and run the Azure CLI\Screen Shot 2021-02-09 at 2.58.14 PM.png" alt="Image" title="Image" /></p>
 
+<p><strong>use curl command to see the contents of created website</strong></p>
+
 <p><img src="images\Install and run the Azure CLI\Screen Shot 2021-02-09 at 2.58.58 PM.png" alt="Image" title="Image" /></p>
 
 <p><img src="images\Install and run the Azure CLI\Screen Shot 2021-02-09 at 3.00.53 PM.png" alt="Image" title="Image" /></p>
 
+<p><strong>The final step is to deploy code from a GitHub repository to the web app. Let’s use a simple PHP page available in the Azure Samples GitHub repository that displays “Hello World!” when it executes. Make sure to use the web app name you created</strong></p>
+
 <p><img src="images\Install and run the Azure CLI\Screen Shot 2021-02-09 at 3.02.40 PM.png" alt="Image" title="Image" /></p>
 
+<p><strong>This is the original default page before deployment</strong></p>
+
 <p><img src="images\Install and run the Azure CLI\Screen Shot 2021-02-09 at 3.02.44 PM.png" alt="Image" title="Image" /></p>
+
+<p><strong>The manual deployment from GitHub is being processed</strong></p>
 
 <p><img src="images\Install and run the Azure CLI\Screen Shot 2021-02-09 at 3.02.57 PM.png" alt="Image" title="Image" /></p>
 
 <p><img src="images\Install and run the Azure CLI\Screen Shot 2021-02-09 at 3.03.26 PM.png" alt="Image" title="Image" /></p>
+
+<p><strong>Once the deployment has finished from the master branch of the repository, we can confirm with curl command or use the browser</strong></p>
 
 <p><img src="images\Install and run the Azure CLI\Screen Shot 2021-02-09 at 3.03.46 PM.png" alt="Image" title="Image" /></p>
 

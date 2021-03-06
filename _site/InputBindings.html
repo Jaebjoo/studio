@@ -31,12 +31,12 @@
 
     <div class="collapse navbar-collapse" id="navbarsExample02">
         <ul class="navbar-nav mr-auto">
-            <!-- <li class="nav-item active">
+            <li class="nav-item active">
                 <a class="nav-link" href="index.html">Home
                     <span class="sr-only">(current)</span>
                 </a>
             </li>
-            <li class="nav-item dropdown">
+            <!-- <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Azure Learn (2020)
               </a>
@@ -114,7 +114,6 @@
                   <a class="dropdown-item" href="SQLonLinuxContainers.html">SQL Server on Linux Containers</a>
                   <a class="dropdown-item" href="InstallPowershell.html">Powershell</a>
                   <a class="dropdown-item" href="InstallAzureCLI.html">Azure CLI</a>
-                  
                 </div>
               </li>
               <li class="nav-item dropdown">
@@ -129,7 +128,9 @@
                     <!-- <a class="dropdown-item" href="index.html">Azure Fundamentals 5</a> -->
                     <!-- <a class="dropdown-item" href="index.html">Azure Fundamentals 6</a> -->
                     <a class="dropdown-item" href="StaticWebApp.html">Azure Static Website App</a>
+                    <!-- <a class="dropdown-item" href="index.html">Linux Docker Container Compose</a> -->
                     <!-- <a class="dropdown-item" href="index.html">Docker Container Networking</a> -->
+                    <!-- <a class="dropdown-item" href="index.html">Powershell Scripts for Linux Containers</a> -->
                     <!-- <a class="dropdown-item" href="index.html">...</a> -->
                   </div>
                 </li>
@@ -167,6 +168,12 @@
 
 <p>https://docs.microsoft.com/en-au/learn/modules/chain-azure-functions-data-using-bindings/5-read-data-with-input-bindings-portal-lab?pivots=javascript</p>
 
+<p><strong>Input binding is a connection from a Source such as a blob storage, Azure DB, Mobile Apps, Table storage.</strong></p>
+
+<p>In this demo, the function app will take data from Azure DB.</p>
+
+<p>The following are the steps taken to create a Azure Cosmos DB Account.</p>
+
 <p><img src="images\Read data with input bindings\Screen Shot 2021-02-15 at 10.22.55 PM.png" alt="Image" title="Image" /></p>
 
 <p><img src="images\Read data with input bindings\Screen Shot 2021-02-15 at 10.24.21 PM.png" alt="Image" title="Image" /></p>
@@ -179,6 +186,8 @@
 
 <p><img src="images\Read data with input bindings\Screen Shot 2021-02-15 at 10.27.52 PM.png" alt="Image" title="Image" /></p>
 
+<p><strong>A new container is created to hold data</strong></p>
+
 <p><img src="images\Read data with input bindings\Screen Shot 2021-02-15 at 10.28.11 PM.png" alt="Image" title="Image" /></p>
 
 <p><img src="images\Read data with input bindings\Screen Shot 2021-02-15 at 10.28.25 PM.png" alt="Image" title="Image" /></p>
@@ -189,11 +198,15 @@
 
 <p><img src="images\Read data with input bindings\Screen Shot 2021-02-15 at 10.30.05 PM.png" alt="Image" title="Image" /></p>
 
+<p><strong>The new container is to hold Bookmarks</strong></p>
+
 <p><img src="images\Read data with input bindings\Screen Shot 2021-02-15 at 10.30.44 PM.png" alt="Image" title="Image" /></p>
 
 <p><img src="images\Read data with input bindings\Screen Shot 2021-02-15 at 10.42.17 PM.png" alt="Image" title="Image" /></p>
 
 <p><img src="images\Read data with input bindings\Screen Shot 2021-02-15 at 10.42.21 PM.png" alt="Image" title="Image" /></p>
+
+<p><strong>We will create a new item which has a microsoft Azure URL.</strong></p>
 
 <p><img src="images\Read data with input bindings\Screen Shot 2021-02-15 at 10.42.31 PM.png" alt="Image" title="Image" /></p>
 
@@ -225,6 +238,8 @@
 
 <p><img src="images\Read data with input bindings\Screen Shot 2021-02-15 at 10.51.35 PM.png" alt="Image" title="Image" /></p>
 
+<p><strong>Under the function that was created we will add a input binding.</strong></p>
+
 <p><img src="images\Read data with input bindings\Screen Shot 2021-02-15 at 10.52.21 PM.png" alt="Image" title="Image" /></p>
 
 <p><img src="images\Read data with input bindings\Screen Shot 2021-02-15 at 10.54.23 PM.png" alt="Image" title="Image" /></p>
@@ -235,7 +250,11 @@
 
 <p><img src="images\Read data with input bindings\Screen Shot 2021-02-15 at 10.54.50 PM.png" alt="Image" title="Image" /></p>
 
+<p><strong>If the document id in the url is in the HTTP request and it is held in the DB, it will display the URL</strong></p>
+
 <p><img src="images\Read data with input bindings\Screen Shot 2021-02-15 at 10.55.41 PM.png" alt="Image" title="Image" /></p>
+
+<p><strong>we will pass the id of “docs”</strong></p>
 
 <p><img src="images\Read data with input bindings\Screen Shot 2021-02-15 at 10.56.25 PM.png" alt="Image" title="Image" /></p>
 
@@ -245,9 +264,13 @@
 
 <p><img src="images\Read data with input bindings\Screen Shot 2021-02-15 at 11.06.53 PM.png" alt="Image" title="Image" /></p>
 
+<p><strong>The docs bookmark URL has been displayed</strong></p>
+
 <p><img src="images\Read data with input bindings\Screen Shot 2021-02-15 at 11.07.05 PM.png" alt="Image" title="Image" /></p>
 
 <p><img src="images\Read data with input bindings\Screen Shot 2021-02-15 at 11.07.10 PM.png" alt="Image" title="Image" /></p>
+
+<p><strong>The azure bookmark URL has been displayed</strong></p>
 
     </div>
 

@@ -31,12 +31,12 @@
 
     <div class="collapse navbar-collapse" id="navbarsExample02">
         <ul class="navbar-nav mr-auto">
-            <!-- <li class="nav-item active">
+            <li class="nav-item active">
                 <a class="nav-link" href="index.html">Home
                     <span class="sr-only">(current)</span>
                 </a>
             </li>
-            <li class="nav-item dropdown">
+            <!-- <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Azure Learn (2020)
               </a>
@@ -114,7 +114,6 @@
                   <a class="dropdown-item" href="SQLonLinuxContainers.html">SQL Server on Linux Containers</a>
                   <a class="dropdown-item" href="InstallPowershell.html">Powershell</a>
                   <a class="dropdown-item" href="InstallAzureCLI.html">Azure CLI</a>
-                  
                 </div>
               </li>
               <li class="nav-item dropdown">
@@ -129,7 +128,9 @@
                     <!-- <a class="dropdown-item" href="index.html">Azure Fundamentals 5</a> -->
                     <!-- <a class="dropdown-item" href="index.html">Azure Fundamentals 6</a> -->
                     <a class="dropdown-item" href="StaticWebApp.html">Azure Static Website App</a>
+                    <!-- <a class="dropdown-item" href="index.html">Linux Docker Container Compose</a> -->
                     <!-- <a class="dropdown-item" href="index.html">Docker Container Networking</a> -->
+                    <!-- <a class="dropdown-item" href="index.html">Powershell Scripts for Linux Containers</a> -->
                     <!-- <a class="dropdown-item" href="index.html">...</a> -->
                   </div>
                 </li>
@@ -167,11 +168,23 @@
 
 <p>https://docs.microsoft.com/en-au/learn/modules/chain-azure-functions-data-using-bindings/7-write-data-with-output-bindings-portal-lab?pivots=javascript</p>
 
+<p><strong>Output bindings of functions are destinations for data.</strong> There are numerous binding types which include blob storage, HTTP, microsoft graph and mobile apps.</p>
+
+<p><strong>Functions will create connection between apps and data storage.</strong></p>
+
+<p>In this demo, there will be a HTTP request to add a bookmark.</p>
+
+<p>If this bookmark is not in the DB already, it will add the bookmark and display an appropriate response.</p>
+
+<p>If this bookmark already exist, it will display a response accordingly.</p>
+
 <p><img src="images\Write data with output bindings\Screen Shot 2021-02-15 at 11.08.19 PM.png" alt="Image" title="Image" /></p>
 
 <p><img src="images\Write data with output bindings\Screen Shot 2021-02-15 at 11.09.09 PM.png" alt="Image" title="Image" /></p>
 
 <p><img src="images\Write data with output bindings\Screen Shot 2021-02-15 at 11.09.12 PM.png" alt="Image" title="Image" /></p>
+
+<p><strong>We will create an output binding to the Cosmos DB created.</strong></p>
 
 <p><img src="images\Write data with output bindings\Screen Shot 2021-02-15 at 11.10.01 PM.png" alt="Image" title="Image" /></p>
 
@@ -181,19 +194,31 @@
 
 <p><img src="images\Write data with output bindings\Screen Shot 2021-02-15 at 11.15.33 PM.png" alt="Image" title="Image" /></p>
 
+<p><strong>This is the demo code, if it exists then the message “Bookmark exists will display, otherwise it will create a JSON String and write it to the database.</strong></p>
+
 <p><img src="images\Write data with output bindings\Screen Shot 2021-02-15 at 11.15.38 PM.png" alt="Image" title="Image" /></p>
 
 <p><img src="images\Write data with output bindings\Screen Shot 2021-02-15 at 11.16.21 PM.png" alt="Image" title="Image" /></p>
 
+<p><strong>We will test this function with a POST. The id is docs and url is the Azure page.</strong></p>
+
 <p><img src="images\Write data with output bindings\Screen Shot 2021-02-15 at 11.16.54 PM.png" alt="Image" title="Image" /></p>
+
+<p><strong>Error message displays</strong></p>
+
+<p><strong>We will try a different POST request with GitHub Home.</strong></p>
 
 <p><img src="images\Write data with output bindings\Screen Shot 2021-02-15 at 11.17.06 PM.png" alt="Image" title="Image" /></p>
 
 <p><img src="images\Write data with output bindings\Screen Shot 2021-02-15 at 11.17.19 PM.png" alt="Image" title="Image" /></p>
 
+<p><strong>We will check the DB to see if the entry has been made</strong></p>
+
 <p><img src="images\Write data with output bindings\Screen Shot 2021-02-15 at 11.17.25 PM.png" alt="Image" title="Image" /></p>
 
 <p><img src="images\Write data with output bindings\Screen Shot 2021-02-15 at 11.17.30 PM.png" alt="Image" title="Image" /></p>
+
+<p><strong>It has been added</strong></p>
 
 <p><img src="images\Write data with output bindings\Screen Shot 2021-02-15 at 11.18.09 PM.png" alt="Image" title="Image" /></p>
 
@@ -202,6 +227,8 @@
 <p><img src="images\Write data with output bindings\Screen Shot 2021-02-15 at 11.18.16 PM.png" alt="Image" title="Image" /></p>
 
 <p><img src="images\Write data with output bindings\Screen Shot 2021-02-15 at 11.18.19 PM.png" alt="Image" title="Image" /></p>
+
+<p><strong>A message has been posted in logs.</strong></p>
 
 <p><img src="images\Write data with output bindings\Screen Shot 2021-02-15 at 11.18.25 PM.png" alt="Image" title="Image" /></p>
 

@@ -31,12 +31,12 @@
 
     <div class="collapse navbar-collapse" id="navbarsExample02">
         <ul class="navbar-nav mr-auto">
-            <!-- <li class="nav-item active">
+            <li class="nav-item active">
                 <a class="nav-link" href="index.html">Home
                     <span class="sr-only">(current)</span>
                 </a>
             </li>
-            <li class="nav-item dropdown">
+            <!-- <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Azure Learn (2020)
               </a>
@@ -114,7 +114,6 @@
                   <a class="dropdown-item" href="SQLonLinuxContainers.html">SQL Server on Linux Containers</a>
                   <a class="dropdown-item" href="InstallPowershell.html">Powershell</a>
                   <a class="dropdown-item" href="InstallAzureCLI.html">Azure CLI</a>
-                  
                 </div>
               </li>
               <li class="nav-item dropdown">
@@ -129,7 +128,9 @@
                     <!-- <a class="dropdown-item" href="index.html">Azure Fundamentals 5</a> -->
                     <!-- <a class="dropdown-item" href="index.html">Azure Fundamentals 6</a> -->
                     <a class="dropdown-item" href="StaticWebApp.html">Azure Static Website App</a>
+                    <!-- <a class="dropdown-item" href="index.html">Linux Docker Container Compose</a> -->
                     <!-- <a class="dropdown-item" href="index.html">Docker Container Networking</a> -->
+                    <!-- <a class="dropdown-item" href="index.html">Powershell Scripts for Linux Containers</a> -->
                     <!-- <a class="dropdown-item" href="index.html">...</a> -->
                   </div>
                 </li>
@@ -167,35 +168,73 @@
 
 <p>https://docs.microsoft.com/en-us/learn/modules/secure-network-connectivity-azure/6-configure-access-network-security-group</p>
 
+<p><strong>You can manage the connection to the VM using Network security groups to allow particular traffic.</strong></p>
+
+<p>This can include SSH, HTTP, HTTPS.</p>
+
+<p>This skill is essential for managing the network on Azure.</p>
+
+<p>Configuring the Network security group is key to security on Azure.</p>
+
+<p><strong>From Cloud Shell, run the following az vm create command to create a Linux VM</strong></p>
+
 <p><img src="images\NSG\Screen Shot 2021-01-21 at 8.03.53 PM.png" alt="Image" title="Image" /></p>
 
 <p><img src="images\NSG\Screen Shot 2021-01-21 at 8.05.18 PM.png" alt="Image" title="Image" /></p>
+
+<p><strong>Run the following az vm extension set command to configure Nginx on your VM</strong></p>
 
 <p><img src="images\NSG\Screen Shot 2021-01-21 at 8.05.35 PM.png" alt="Image" title="Image" /></p>
 
 <p><img src="images\NSG\Screen Shot 2021-01-21 at 8.07.05 PM.png" alt="Image" title="Image" /></p>
 
+<p><strong>Run the following az vm list-ip-addresses command to get your VM’s IP address and store the result as a Bash variable</strong></p>
+
 <p><img src="images\NSG\Screen Shot 2021-01-21 at 8.07.45 PM.png" alt="Image" title="Image" /></p>
 
 <p><img src="images\NSG\Screen Shot 2021-01-21 at 8.08.23 PM.png" alt="Image" title="Image" /></p>
+
+<p><strong>Run the following curl command to download the home page</strong></p>
 
 <p><img src="images\NSG\Screen Shot 2021-01-21 at 8.08.36 PM.png" alt="Image" title="Image" /></p>
 
 <p><img src="images\NSG\Screen Shot 2021-01-21 at 8.09.07 PM.png" alt="Image" title="Image" /></p>
 
+<p><strong>You can see that the VM cannot be reached on port 80</strong></p>
+
+<p><strong>Run the following az network nsg list command to list the network security groups that are associated with your VM</strong></p>
+
 <p><img src="images\NSG\Screen Shot 2021-01-21 at 8.10.12 PM.png" alt="Image" title="Image" /></p>
+
+<p><strong>The output will be my-vmNSG, which the VM is on</strong></p>
+
+<p><strong>Run the following az network nsg rule list command to list the rules associated with the NSG named my-vmNSG</strong></p>
 
 <p><img src="images\NSG\Screen Shot 2021-01-21 at 8.10.41 PM.png" alt="Image" title="Image" /></p>
 
 <p><img src="images\NSG\Screen Shot 2021-01-21 at 8.11.21 PM.png" alt="Image" title="Image" /></p>
 
+<p><strong>Only port 22 has been allowed for SSH, there is no Port 80</strong></p>
+
 <p><img src="images\NSG\Screen Shot 2021-01-21 at 8.11.34 PM.png" alt="Image" title="Image" /></p>
+
+<p><strong>Run the following az network nsg rule create command to create a rule called allow-http that allows inbound access on port 80</strong></p>
 
 <p><img src="images\NSG\Screen Shot 2021-01-21 at 8.11.52 PM.png" alt="Image" title="Image" /></p>
 
+<p><strong>To verify the configuration, run az network nsg rule list to see the updated list of rules.</strong></p>
+
+<p><strong>The Port 80 has been added to the ports allowed</strong></p>
+
 <p><img src="images\NSG\Screen Shot 2021-01-21 at 8.12.16 PM.png" alt="Image" title="Image" /></p>
 
+<p><strong>Run the same curl command that you ran earlier</strong></p>
+
 <p><img src="images\NSG\Screen Shot 2021-01-21 at 8.13.40 PM.png" alt="Image" title="Image" /></p>
+
+<p><strong>This will return the content of the website.</strong></p>
+
+<p><strong>You can also use the browser to confirm connection through port 80</strong></p>
 
 <p><img src="images\NSG\Screen Shot 2021-01-21 at 8.13.46 PM.png" alt="Image" title="Image" /></p>
 

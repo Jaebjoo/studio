@@ -31,12 +31,12 @@
 
     <div class="collapse navbar-collapse" id="navbarsExample02">
         <ul class="navbar-nav mr-auto">
-            <!-- <li class="nav-item active">
+            <li class="nav-item active">
                 <a class="nav-link" href="index.html">Home
                     <span class="sr-only">(current)</span>
                 </a>
             </li>
-            <li class="nav-item dropdown">
+            <!-- <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Azure Learn (2020)
               </a>
@@ -114,7 +114,6 @@
                   <a class="dropdown-item" href="SQLonLinuxContainers.html">SQL Server on Linux Containers</a>
                   <a class="dropdown-item" href="InstallPowershell.html">Powershell</a>
                   <a class="dropdown-item" href="InstallAzureCLI.html">Azure CLI</a>
-                  
                 </div>
               </li>
               <li class="nav-item dropdown">
@@ -129,7 +128,9 @@
                     <!-- <a class="dropdown-item" href="index.html">Azure Fundamentals 5</a> -->
                     <!-- <a class="dropdown-item" href="index.html">Azure Fundamentals 6</a> -->
                     <a class="dropdown-item" href="StaticWebApp.html">Azure Static Website App</a>
+                    <!-- <a class="dropdown-item" href="index.html">Linux Docker Container Compose</a> -->
                     <!-- <a class="dropdown-item" href="index.html">Docker Container Networking</a> -->
+                    <!-- <a class="dropdown-item" href="index.html">Powershell Scripts for Linux Containers</a> -->
                     <!-- <a class="dropdown-item" href="index.html">...</a> -->
                   </div>
                 </li>
@@ -167,19 +168,37 @@
 
 <p>https://docs.microsoft.com/en-au/learn/modules/run-docker-with-azure-container-instances/</p>
 
+<p>Containers offer a standardized and repeatable way to package, deploy and manage cloud applications. Azure Container Instances let you run a container in Azure without managing virtual machines and without a higher-level service.</p>
+
+<p><strong>This option may apply to the Linux Course resources that needed for Faisal.</strong></p>
+
+<p>Container networking must be futher researched.</p>
+
+<p>However in this demp, container instance is created rather than within a VM.</p>
+
 <p><img src="images\Run Docker containers with Azure Container Instances (re-do with own subscription)\Screen Shot 2021-01-31 at 8.47.38 PM.png" alt="Image" title="Image" /></p>
 
 <p><img src="images\Run Docker containers with Azure Container Instances (re-do with own subscription)\Screen Shot 2021-01-31 at 8.47.43 PM.png" alt="Image" title="Image" /></p>
 
+<p><strong>Create a new resource group with the name learn-deploy-aci-rg</strong></p>
+
 <p><img src="images\Run Docker containers with Azure Container Instances (re-do with own subscription)\Screen Shot 2021-01-31 at 8.49.00 PM.png" alt="Image" title="Image" /></p>
+
+<p><strong>You provide a DNS name to expose your container to the Internet.</strong></p>
 
 <p><img src="images\Run Docker containers with Azure Container Instances (re-do with own subscription)\Screen Shot 2021-01-31 at 8.49.06 PM.png" alt="Image" title="Image" /></p>
 
+<p><strong>Run the following az container create command to start a container instance.</strong></p>
+
 <p><img src="images\Run Docker containers with Azure Container Instances (re-do with own subscription)\Screen Shot 2021-01-31 at 8.49.10 PM.png" alt="Image" title="Image" /></p>
+
+<p><strong>Run az container show to check its status</strong></p>
 
 <p><img src="images\Run Docker containers with Azure Container Instances (re-do with own subscription)\Screen Shot 2021-01-31 at 8.49.24 PM.png" alt="Image" title="Image" /></p>
 
 <p><img src="images\Run Docker containers with Azure Container Instances (re-do with own subscription)\Screen Shot 2021-01-31 at 8.49.29 PM.png" alt="Image" title="Image" /></p>
+
+<p><strong>From a browser, navigate to your container’s FQDN to see it running. You see this</strong></p>
 
 <p><img src="images\Run Docker containers with Azure Container Instances (re-do with own subscription)\Screen Shot 2021-01-31 at 8.49.36 PM.png" alt="Image" title="Image" /></p>
 
@@ -189,11 +208,19 @@
 
 <p><img src="images\Run Docker containers with Azure Container Instances (re-do with own subscription)\Screen Shot 2021-01-31 at 8.50.00 PM.png" alt="Image" title="Image" /></p>
 
+<p><strong>Azure Container Instances starts the container and then stops it when its process (a script, in this case) exits. When Azure Container Instances stops a container whose restart policy is Never or OnFailure, the container’s status is set to Terminated.</strong></p>
+
 <p><img src="images\Run Docker containers with Azure Container Instances (re-do with own subscription)\Screen Shot 2021-01-31 at 8.50.07 PM.png" alt="Image" title="Image" /></p>
+
+<p><strong>Run az container show to check your container’s status</strong></p>
 
 <p><img src="images\Run Docker containers with Azure Container Instances (re-do with own subscription)\Screen Shot 2021-01-31 at 8.50.17 PM.png" alt="Image" title="Image" /></p>
 
+<p><strong>View the container’s logs to examine the output. To do so, run az container logs like this</strong></p>
+
 <p><img src="images\Run Docker containers with Azure Container Instances (re-do with own subscription)\Screen Shot 2021-01-31 at 8.50.24 PM.png" alt="Image" title="Image" /></p>
+
+<p><strong>You see this</strong></p>
 
 <p><img src="images\Run Docker containers with Azure Container Instances (re-do with own subscription)\Screen Shot 2021-01-31 at 8.50.29 PM.png" alt="Image" title="Image" /></p>
 
@@ -210,6 +237,8 @@
 <p><img src="images\Run Docker containers with Azure Container Instances (re-do with own subscription)\Screen Shot 2021-01-31 at 8.51.08 PM.png" alt="Image" title="Image" /></p>
 
 <p><img src="images\Run Docker containers with Azure Container Instances (re-do with own subscription)\Screen Shot 2021-01-31 at 8.51.12 PM.png" alt="Image" title="Image" /></p>
+
+<p><strong>Once the app is available, you see this</strong></p>
 
 <p><img src="images\Run Docker containers with Azure Container Instances (re-do with own subscription)\Screen Shot 2021-01-31 at 8.51.21 PM.png" alt="Image" title="Image" /></p>
 

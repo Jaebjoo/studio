@@ -31,12 +31,12 @@
 
     <div class="collapse navbar-collapse" id="navbarsExample02">
         <ul class="navbar-nav mr-auto">
-            <!-- <li class="nav-item active">
+            <li class="nav-item active">
                 <a class="nav-link" href="index.html">Home
                     <span class="sr-only">(current)</span>
                 </a>
             </li>
-            <li class="nav-item dropdown">
+            <!-- <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Azure Learn (2020)
               </a>
@@ -114,7 +114,6 @@
                   <a class="dropdown-item" href="SQLonLinuxContainers.html">SQL Server on Linux Containers</a>
                   <a class="dropdown-item" href="InstallPowershell.html">Powershell</a>
                   <a class="dropdown-item" href="InstallAzureCLI.html">Azure CLI</a>
-                  
                 </div>
               </li>
               <li class="nav-item dropdown">
@@ -129,7 +128,9 @@
                     <!-- <a class="dropdown-item" href="index.html">Azure Fundamentals 5</a> -->
                     <!-- <a class="dropdown-item" href="index.html">Azure Fundamentals 6</a> -->
                     <a class="dropdown-item" href="StaticWebApp.html">Azure Static Website App</a>
+                    <!-- <a class="dropdown-item" href="index.html">Linux Docker Container Compose</a> -->
                     <!-- <a class="dropdown-item" href="index.html">Docker Container Networking</a> -->
+                    <!-- <a class="dropdown-item" href="index.html">Powershell Scripts for Linux Containers</a> -->
                     <!-- <a class="dropdown-item" href="index.html">...</a> -->
                   </div>
                 </li>
@@ -167,15 +168,31 @@
 
 <p>https://docs.microsoft.com/en-au/learn/modules/automate-azure-tasks-with-powershell/4-exercise-install-azure-powershell?pivots=macos</p>
 
+<p>Creating administration scripts is a powerful way to optimize your work flow. You can automate common, repetitive tasks, and once a script has been verified, it will run consistently, likely reducing errors.</p>
+
+<p>You can use Powershell to manage resources.</p>
+
+<p><strong>Powershell can be used as an alternative to portal, it is a vital skill as an Azure Administrator</strong></p>
+
+<p>A LIST of VMs can be created with a single script. This will be useful when creating identical set of resources for individual students in a Class.</p>
+
+<p><strong>It will be important to know how to use Powershell scripts to complete the tasks given by Faisal.</strong></p>
+
+<p><strong>Install Homebrew-Cask to obtain more packages, including the PowerShell Core package</strong></p>
+
 <p><img src="images\Install Run Powershell\Screen Shot 2021-02-09 at 3.07.37 PM.png" alt="Image" title="Image" /></p>
 
-<p><img src="images\Install Run Powershell\Screen Shot 2021-02-09 at 3.08.50 PM.png" alt="Image" title="Image" /></p>
+<p><strong>You can run the following command to create a new VM on Powershell rather than the Portal</strong></p>
 
 <p><img src="images\Install Run Powershell\Screen Shot 2021-02-09 at 3.08.54 PM.png" alt="Image" title="Image" /></p>
 
 <p><img src="images\Install Run Powershell\Screen Shot 2021-02-09 at 3.10.28 PM.png" alt="Image" title="Image" /></p>
 
+<p><strong>pwsh command used on Mac to use powershell after installation.</strong></p>
+
 <p><img src="images\Install Run Powershell\Screen Shot 2021-02-09 at 3.10.49 PM.png" alt="Image" title="Image" /></p>
+
+<p><strong>You use the Import-Module cmdlet to load modules. This cmdlet has many parameters to handle a variety of situations. For example, it can load multiple modules, a specific module version, part of a module, and so on</strong></p>
 
 <p><img src="images\Install Run Powershell\Screen Shot 2021-02-09 at 3.11.37 PM.png" alt="Image" title="Image" /></p>
 
@@ -183,11 +200,15 @@
 
 <p><img src="images\Install Run Powershell\Screen Shot 2021-02-09 at 3.12.30 PM.png" alt="Image" title="Image" /></p>
 
+<p><strong>You need the following modules to fully use Powershell</strong></p>
+
 <p><img src="images\Install Run Powershell\Screen Shot 2021-02-09 at 3.13.01 PM.png" alt="Image" title="Image" /></p>
 
 <p><img src="images\Install Run Powershell\Screen Shot 2021-02-09 at 3.15.31 PM.png" alt="Image" title="Image" /></p>
 
 <p><img src="images\Install Run Powershell\Screen Shot 2021-02-09 at 3.16.25 PM.png" alt="Image" title="Image" /></p>
+
+<p><strong>You can use these commands to navigate in Azure Infrastructure</strong></p>
 
 <p><img src="images\Install Run Powershell\Screen Shot 2021-02-09 at 3.16.48 PM.png" alt="Image" title="Image" /></p>
 
@@ -200,6 +221,8 @@
 <p><img src="images\Install Run Powershell\Screen Shot 2021-02-09 at 3.17.48 PM.png" alt="Image" title="Image" /></p>
 
 <p><img src="images\Install Run Powershell\Screen Shot 2021-02-09 at 3.19.41 PM.png" alt="Image" title="Image" /></p>
+
+<p><strong>I completed creating a VM through powershell and also view the specifications of the VM</strong></p>
 
 <p><img src="images\Install Run Powershell\Screen Shot 2021-02-09 at 3.19.47 PM.png" alt="Image" title="Image" /></p>
 
@@ -226,6 +249,8 @@
 <p><img src="images\Install Run Powershell\Screen Shot 2021-02-09 at 3.25.48 PM.png" alt="Image" title="Image" /></p>
 
 <p><img src="images\Install Run Powershell\Screen Shot 2021-02-09 at 3.26.04 PM.png" alt="Image" title="Image" /></p>
+
+<p><strong>After viewing the ip address off the VM named “vm” I connected to the VM via SSH</strong></p>
 
 <p><img src="images\Install Run Powershell\Screen Shot 2021-02-09 at 3.26.22 PM.png" alt="Image" title="Image" /></p>
 
@@ -255,6 +280,8 @@
 
 <p><img src="images\Install Run Powershell\Screen Shot 2021-02-09 at 3.39.01 PM.png" alt="Image" title="Image" /></p>
 
+<p><strong>Powershell Scripts can be made to automate the management process</strong></p>
+
 <p><img src="images\Install Run Powershell\Screen Shot 2021-02-09 at 3.39.36 PM.png" alt="Image" title="Image" /></p>
 
 <p><img src="images\Install Run Powershell\Screen Shot 2021-02-09 at 3.39.43 PM.png" alt="Image" title="Image" /></p>
@@ -269,15 +296,21 @@
 
 <p><img src="images\Install Run Powershell\Screen Shot 2021-02-09 at 3.41.03 PM.png" alt="Image" title="Image" /></p>
 
+<p><strong>The following script will create 3 VMs</strong></p>
+
 <p><img src="images\Install Run Powershell\Screen Shot 2021-02-09 at 3.42.03 PM.png" alt="Image" title="Image" /></p>
 
 <p><img src="images\Install Run Powershell\Screen Shot 2021-02-09 at 3.42.24 PM.png" alt="Image" title="Image" /></p>
+
+<p><strong>The 3 VMs will be created one by one</strong></p>
 
 <p><img src="images\Install Run Powershell\Screen Shot 2021-02-09 at 3.42.42 PM.png" alt="Image" title="Image" /></p>
 
 <p><img src="images\Install Run Powershell\Screen Shot 2021-02-09 at 3.43.51 PM.png" alt="Image" title="Image" /></p>
 
 <p><img src="images\Install Run Powershell\Screen Shot 2021-02-09 at 3.44.32 PM.png" alt="Image" title="Image" /></p>
+
+<p><strong>We will check the list of VMs that exist to confirm creation</strong></p>
 
 <p><img src="images\Install Run Powershell\Screen Shot 2021-02-09 at 3.45.42 PM.png" alt="Image" title="Image" /></p>
 

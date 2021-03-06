@@ -31,12 +31,12 @@
 
     <div class="collapse navbar-collapse" id="navbarsExample02">
         <ul class="navbar-nav mr-auto">
-            <!-- <li class="nav-item active">
+            <li class="nav-item active">
                 <a class="nav-link" href="index.html">Home
                     <span class="sr-only">(current)</span>
                 </a>
             </li>
-            <li class="nav-item dropdown">
+            <!-- <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Azure Learn (2020)
               </a>
@@ -114,7 +114,6 @@
                   <a class="dropdown-item" href="SQLonLinuxContainers.html">SQL Server on Linux Containers</a>
                   <a class="dropdown-item" href="InstallPowershell.html">Powershell</a>
                   <a class="dropdown-item" href="InstallAzureCLI.html">Azure CLI</a>
-                  
                 </div>
               </li>
               <li class="nav-item dropdown">
@@ -129,7 +128,9 @@
                     <!-- <a class="dropdown-item" href="index.html">Azure Fundamentals 5</a> -->
                     <!-- <a class="dropdown-item" href="index.html">Azure Fundamentals 6</a> -->
                     <a class="dropdown-item" href="StaticWebApp.html">Azure Static Website App</a>
+                    <!-- <a class="dropdown-item" href="index.html">Linux Docker Container Compose</a> -->
                     <!-- <a class="dropdown-item" href="index.html">Docker Container Networking</a> -->
+                    <!-- <a class="dropdown-item" href="index.html">Powershell Scripts for Linux Containers</a> -->
                     <!-- <a class="dropdown-item" href="index.html">...</a> -->
                   </div>
                 </li>
@@ -167,11 +168,26 @@
 
 <p>https://docs.microsoft.com/en-au/learn/modules/execute-azure-function-with-triggers/4-create-timer-trigger?pivots=csharp</p>
 
+<p><strong>Timer triggers run the Azure function code at a scheduled time.</strong></p>
+
+<p>The example given is a blog owner who notices that their subscribers aren’t reading your most recent posts. You decide that the best action is to send an email once a week to remind them to check your blog. You implement this logic using an Azure function app with a timer trigger to invoke your function weekly.</p>
+
+<p><strong>It is based on a CRON expression.</strong></p>
+
+<p><strong>The order of six fields is 
+{second} {minute} {hour} {day} {month} {day of the week}.</strong></p>
+
+<p>You must first create a Function App which can be found in the marketplace.</p>
+
 <p><img src="images\Create a timer trigger\Screen Shot 2021-02-15 at 9.27.33 PM.png" alt="Image" title="Image" /></p>
 
 <p><img src="images\Create a timer trigger\Screen Shot 2021-02-15 at 9.27.38 PM.png" alt="Image" title="Image" /></p>
 
+<p><strong>The following are the configuration details.</strong></p>
+
 <p><img src="images\Create a timer trigger\Screen Shot 2021-02-15 at 9.28.34 PM.png" alt="Image" title="Image" /></p>
+
+<p><strong>It is to be hosted on Windows system, and serverless.</strong></p>
 
 <p><img src="images\Create a timer trigger\Screen Shot 2021-02-15 at 9.29.28 PM.png" alt="Image" title="Image" /></p>
 
@@ -179,7 +195,11 @@
 
 <p><img src="images\Create a timer trigger\Screen Shot 2021-02-15 at 9.32.03 PM.png" alt="Image" title="Image" /></p>
 
+<p><strong>Functions code is stored in the functions section.</strong></p>
+
 <p><img src="images\Create a timer trigger\Screen Shot 2021-02-15 at 9.32.18 PM.png" alt="Image" title="Image" /></p>
+
+<p><strong>You add a timer trigger following this process.</strong></p>
 
 <p><img src="images\Create a timer trigger\Screen Shot 2021-02-15 at 9.32.24 PM.png" alt="Image" title="Image" /></p>
 
@@ -191,11 +211,15 @@
 
 <p><img src="images\Create a timer trigger\Screen Shot 2021-02-15 at 9.33.33 PM.png" alt="Image" title="Image" /></p>
 
+<p><strong>Function timer trigger has been created.</strong></p>
+
 <p><img src="images\Create a timer trigger\Screen Shot 2021-02-15 at 9.34.19 PM.png" alt="Image" title="Image" /></p>
 
 <p><img src="images\Create a timer trigger\Screen Shot 2021-02-15 at 9.34.30 PM.png" alt="Image" title="Image" /></p>
 
 <p><img src="images\Create a timer trigger\Screen Shot 2021-02-15 at 9.34.40 PM.png" alt="Image" title="Image" /></p>
+
+<p><strong>You can edit the timer trigger and schange the schedule.</strong></p>
 
 <p><img src="images\Create a timer trigger\Screen Shot 2021-02-15 at 9.34.46 PM.png" alt="Image" title="Image" /></p>
 
@@ -205,6 +229,8 @@
 
 <p><img src="images\Create a timer trigger\Screen Shot 2021-02-15 at 9.35.26 PM.png" alt="Image" title="Image" /></p>
 
+<p><strong>The demo code is to simply display log information to confirm trigger execution.</strong></p>
+
 <p><img src="images\Create a timer trigger\Screen Shot 2021-02-15 at 9.35.36 PM.png" alt="Image" title="Image" /></p>
 
 <p><img src="images\Create a timer trigger\Screen Shot 2021-02-15 at 9.35.58 PM.png" alt="Image" title="Image" /></p>
@@ -213,13 +239,19 @@
 
 <p><img src="images\Create a timer trigger\Screen Shot 2021-02-15 at 9.36.36 PM.png" alt="Image" title="Image" /></p>
 
+<p><strong>You can run the code.</strong></p>
+
 <p><img src="images\Create a timer trigger\Screen Shot 2021-02-15 at 9.36.46 PM.png" alt="Image" title="Image" /></p>
 
 <p><img src="images\Create a timer trigger\Screen Shot 2021-02-15 at 9.37.10 PM.png" alt="Image" title="Image" /></p>
 
 <p><img src="images\Create a timer trigger\Screen Shot 2021-02-15 at 9.37.22 PM.png" alt="Image" title="Image" /></p>
 
+<p><strong>The trigger can be checked in the logs display.</strong></p>
+
 <p><img src="images\Create a timer trigger\Screen Shot 2021-02-15 at 9.37.48 PM.png" alt="Image" title="Image" /></p>
+
+<p><strong>Function has been disabled to end this demo.</strong></p>
 
 <p><img src="images\Create a timer trigger\Screen Shot 2021-02-15 at 9.37.54 PM.png" alt="Image" title="Image" /></p>
 

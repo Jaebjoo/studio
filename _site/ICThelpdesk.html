@@ -170,6 +170,8 @@
 
 <p>Due Date <strong>April 9</strong></p>
 
+<p>Job Completed <strong>March 8</strong> (deployed)</p>
+
 <p>Rob requires the ICT helpdesk site (https://help.ict.op.ac.nz) to be migrated from the current server (fthictweb08@ict.op.ac.nz) to the Azure infrastructure.
 the ICT helpdesk website contents are currently being stored in a GitHub repository.</p>
 
@@ -177,7 +179,13 @@ the ICT helpdesk website contents are currently being stored in a GitHub reposit
 
 <h4 id="summary">Summary</h4>
 
-<!-- Task in progress... -->
+<p><strong>The ICT Helpsite has been successfully migrated to the Azure Infrastructure with a Static Web App.</strong></p>
+
+<p>It has been connected to the Github Repository.</p>
+
+<p>It requires a content update in the long run. However the job has been completed.</p>
+
+<p><strong>This solution is a good template for any projects that need to be hosted on the Azure Infrastructure.</strong></p>
 
 <h4 id="reflection">Reflection</h4>
 
@@ -194,11 +202,9 @@ Liason with Rob and Faisal was timely and concise. We reported our progress as m
     <p><strong>Documentation</strong> - A Proposal Report documenting the summary of research was created. Further documentation about the Static Web App migration was created and store on the DevOps Team Documentation for future reference.</p>
   </li>
   <li>
-    <p><strong>Time Management</strong> -</p>
+    <p><strong>Time Management</strong> - The job was completed in a short period of time with good research and implementation. We knew enough of how to execute the deployment to do so without much problems. The process of creating the static web app and deploying the github repository was very straightforward.</p>
   </li>
 </ul>
-
-<!-- Task in progress... -->
 
 <h4 id="worklog">Worklog</h4>
 
@@ -242,7 +248,67 @@ Faisal requested a proposal report to justify the possible solution.</p>
 
 <h6 id="march-8">March 8</h6>
 
-<p>** Planning to start building the website after resource creation with Rob…</p>
+<p>Meeting with Rob to create the Static Web App.</p>
+
+<p><strong>There is a tutorial on the Microsoft Website about creating the resource</strong></p>
+
+<p><img src="images\ICT Helpdesk Migration\1.png" alt="Image" title="Image" /></p>
+
+<p><strong>These are the example configurations for the creating of the Static Web App resource</strong></p>
+
+<p><img src="images\ICT Helpdesk Migration\2.png" alt="Image" title="Image" /></p>
+
+<p><strong>You must sign in with GitHub and choose the easysdadmin organisation and ICTHelp repository, the branch is the Master</strong></p>
+
+<p><img src="images\ICT Helpdesk Migration\3.png" alt="Image" title="Image" /></p>
+
+<p><strong>There are build settings for the static web app</strong></p>
+
+<p><strong>This is what is needed for HUGO build settings, however we only realised this after creating the resource</strong></p>
+
+<p><img src="images\ICT Helpdesk Migration\4.png" alt="Image" title="Image" /></p>
+
+<p><strong>This new file was created by microsoft static apps and commited to the github repository</strong></p>
+
+<p><strong>We need to note the output location: “dist” line at the bottom</strong></p>
+
+<p><img src="images\ICT Helpdesk Migration\5.png" alt="Image" title="Image" /></p>
+
+<p><strong>GitHub attempts to build the website</strong></p>
+
+<p><img src="images\ICT Helpdesk Migration\6.png" alt="Image" title="Image" /></p>
+
+<p><strong>However this build and deploy fails.</strong></p>
+
+<p><img src="images\ICT Helpdesk Migration\7.png" alt="Image" title="Image" /></p>
+
+<p><strong>This was the error message in the GitHub Actions page.</strong></p>
+
+<p><img src="images\ICT Helpdesk Migration\8.png" alt="Image" title="Image" /></p>
+
+<p><strong>This is where we realised thaat the platform was HUGO. The build process automatically detects this.</strong></p>
+
+<p><img src="images\ICT Helpdesk Migration\9.png" alt="Image" title="Image" /></p>
+
+<p><strong>For HUGO we changed the output location to be “public”</strong></p>
+
+<p><img src="images\ICT Helpdesk Migration\10.png" alt="Image" title="Image" /></p>
+
+<p><strong>There is a tutorial on the Microsoft website for HUGO websites.</strong></p>
+
+<p><img src="images\ICT Helpdesk Migration\11.png" alt="Image" title="Image" /></p>
+
+<p><strong>The build was successful and deployed.</strong></p>
+
+<p><img src="images\ICT Helpdesk Migration\12.png" alt="Image" title="Image" /></p>
+
+<p><strong>The ICT Helpsite can be viewed at the new AZURE URL</strong></p>
+
+<p><img src="images\ICT Helpdesk Migration\13.png" alt="Image" title="Image" /></p>
+
+<h6 id="march-11">March 11</h6>
+
+<p>… Meeting with Rob to discuss updating the contents</p>
 
     </div>
 

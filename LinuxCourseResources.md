@@ -15,6 +15,8 @@ Due Date **April 9**
 
 Job Completed **March 29th**
 
+![Image](images\LinuxCourseResources\Screenshot 2021-03-29 214340.png "Image")
+
 ![Image](images\LinuxCourseResources\Screenshot 2021-03-26 212002.png "Image")
 
 Faisal has requested alternative teaching resources to teach his Linux Course as the necessary VM resources are unable to be created using Vsphere or VMWare as those licenses are due to expire and the OP infrastructure is being migrated to the cloud.

@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <title>Jae Joo Studio Portfolio</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Jae Joo :: Portfolio :: Studio 6 (2021)</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02" aria-controls="navbarsExample02"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExample02">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home
+                    <span class="sr-only">(current)</span>
+                </a>
+            </li>
+            <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Azure Learn (2020)
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="IoT.html">Azure Fundamentals</a>
+                <a class="dropdown-item" href="IoT.html">Introduction to Azure IoT</a>
+                <a class="dropdown-item" href="IoT.html">Introduction to Azure SQL</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Azure Research (2020)
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="AzureIoT.html">IoT</a>
+                  <a class="dropdown-item" href="AzureMariaDB.html">MariaDB</a>
+                  <a class="dropdown-item" href="SQLDB.html">SQL DB</a>
+                  <a class="dropdown-item" href="AzureVM.html">Azure VM</a>
+                  <a class="dropdown-item" href="AzureVnet.html">Azure Vnet</a>
+                  <a class="dropdown-item" href="AzureNIC.html">Azure NIC</a>
+                  <a class="dropdown-item" href="AzureDevTestLabs.html">Azure DevTestLabs</a>
+                  <a class="dropdown-item" href="AzurePowerShell.html">Azure Portal/PowerShell</a>
+                </div>
+              </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Studio5 Tasks
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="DBMigration.html">DB2/3 Migration (Krissi/Rob)</a>
+                  <a class="dropdown-item" href="DBUserAdding.html">DB2/3 User Adding (Rob)</a>
+                  <a class="dropdown-item" href="IoTSimulation.html">IoT Simulation (Research)</a>
+                  <a class="dropdown-item" href="DesktopMaintenance.html">Desktop Maintenance (Rob)</a>
+                  <a class="dropdown-item" href="LinuxConfiguration.html">Linux Configuration (Faisal)</a>
+                  <a class="dropdown-item" href="ImagingCloning.html">Imaging, Cloning (Hamish)</a>
+                  <a class="dropdown-item" href="SystemAudit.html">System Audit (Rob)</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Studio5 Reflection
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="S5Communication.html">Communication</a>
+                  <a class="dropdown-item" href="S5Documentation.html">Documentation</a>
+                  <a class="dropdown-item" href="S5TimeManagement.html">Time Management</a>
+                  <a class="dropdown-item" href="S5ResearchLearning.html">Research + Learning</a>
+                </div>
+              </li> -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Azure Learn
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="MEANStack.html">Build a MEAN Stack Web application on Linux VM</a>
+                  <a class="dropdown-item" href="AzureDevOps.html">Azure Dev Ops</a>
+                  <a class="dropdown-item" href="HostWebApp.html">Host Web App with Azure App Service</a>
+                  <a class="dropdown-item" href="CreateWindowsVM.html">Create a Windows VM</a>
+                  <a class="dropdown-item" href="TCOCalculator.html">TCO Calculator</a>
+                  <a class="dropdown-item" href="AzurePolicies.html">Restrict Deployments with Azure Policies</a>
+                  <a class="dropdown-item" href="TimerTrigger.html">Timer Trigger</a>
+                  <a class="dropdown-item" href="HTTPTrigger.html">HTTP Trigger</a>
+                  <a class="dropdown-item" href="BlobTrigger.html">Blob Trigger</a>
+                  <a class="dropdown-item" href="ResourceLocks.html">Resource Locks</a>
+                  <a class="dropdown-item" href="WebsiteHostedOnAzure.html">Website Hosted on Azure</a>
+                  <a class="dropdown-item" href="BindingTypes.html">Binding Types</a>
+                  <a class="dropdown-item" href="InputBindings.html">Input Bindings</a>
+                  <a class="dropdown-item" href="OutputBindings.html">Output Bindings</a>
+                  <a class="dropdown-item" href="SQLonLinux.html">Deploy SQL Server on Linux</a>
+                  <a class="dropdown-item" href="DockerContainers.html">Docker Containers</a>
+                  <a class="dropdown-item" href="NetworkSecurityGroup.html">Network Security Group</a>
+                  <a class="dropdown-item" href="AzureKeyVault.html">Azure Key Vault</a>
+                  <a class="dropdown-item" href="SQLDatabase.html">SQL Database</a>
+                  <a class="dropdown-item" href="FunctionApp.html">Function App</a>
+                  <a class="dropdown-item" href="SQLonLinuxContainers.html">SQL Server on Linux Containers</a>
+                  <a class="dropdown-item" href="InstallPowershell.html">Powershell</a>
+                  <a class="dropdown-item" href="InstallAzureCLI.html">Azure CLI</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Azure Research
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="AF1.html">Azure Fundamentals 1</a>
+                    <a class="dropdown-item" href="AF2.html">Azure Fundamentals 2</a>
+                    <a class="dropdown-item" href="AF3.html">Azure Fundamentals 3</a>
+                    <a class="dropdown-item" href="AF4.html">Azure Fundamentals 4</a>
+                    <a class="dropdown-item" href="AF5.html">Azure Fundamentals 5</a>
+                    <a class="dropdown-item" href="AF6.html">Azure Fundamentals 6</a>
+                    <a class="dropdown-item" href="StaticWebApp.html">Azure Static Website App</a>
+                    <a class="dropdown-item" href="DockerNetworking.html">Docker Networking</a>
+                    <a class="dropdown-item" href="Bridging.html">Bridging</a>
+                    <!-- <a class="dropdown-item" href="index.html">Powershell Scripts for Linux Containers</a> -->
+                    <!-- <a class="dropdown-item" href="index.html">Puppet X Docker</a> -->
+                    <!-- <a class="dropdown-item" href="index.html">Apache X Docker</a> -->
+                    <!-- <a class="dropdown-item" href="index.html">Nagios X Docker</a> -->
+                    <!-- <a class="dropdown-item" href="index.html">Azure Dev Test Labs</a> -->
+                    <!-- <a class="dropdown-item" href="index.html">Azure Lab Services</a> -->
+                    <!-- <a class="dropdown-item" href="index.html">...</a> -->
+                  </div>
+                </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Tasks
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="ICThelpdesk.html">ICT Helpsite Migration (Rob)</a>
+                  <a class="dropdown-item" href="UpdatingICTHelpsite.html">ICT Helpsite Update (Rob)</a>
+                  <a class="dropdown-item" href="LinuxCourseResources.html">Linux Course Resources (Faisal)</a>
+                  <a class="dropdown-item" href="PCmaintenance.html">PC Maintenance (Rob)</a>
+                  <!-- <a class="dropdown-item" href="index.html">Sys Admin Course Resources (Faisal)</a> -->
+                  <!-- <a class="dropdown-item" href="index.html">Automation/Management Course Resources (Faisal)</a> -->
+                  <!-- <a class="dropdown-item" href="index.html">Rewrite of Linux Course Lab (Faisal)</a> -->
+                  <a class="dropdown-item" href="DevOpsFileOrganisation.html">DevOps Files Organisation</a>
+                  <!-- <a class="dropdown-item" href="index.html">DevOps Team Induction</a> -->
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Reflections
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="S6Communication.html">Communication</a>
+                  <a class="dropdown-item" href="S6Documentation.html">Documentation</a>
+                  <a class="dropdown-item" href="S6TimeManagement.html">Time Management</a>
+                  <a class="dropdown-item" href="S6ResearchLearning.html">Research + Learning</a>
+                </div>
+              </li>
+        </ul>
+    </div>
+</nav>
+<hr>
+    <div class="container">
+        <h2 id="studio-6-">Studio 6 :</h2>
+<h1 id="linux-course-resources">Linux Course Resources</h1>
+
+<h4 id="clients-requests">Client’s Requests</h4>
+
+<p>Job assigned <strong>March 11</strong></p>
+
+<p>Due Date <strong>April 9</strong></p>
+
+<p>Job Completed <strong>March 29th</strong></p>
+
+<p><img src="images\LinuxCourseResources\Screenshot 2021-03-26 212002.png" alt="Image" title="Image" /></p>
+
+<p>Faisal has requested alternative teaching resources to teach his Linux Course as the necessary VM resources are unable to be created using Vsphere or VMWare as those licenses are due to expire and the OP infrastructure is being migrated to the cloud.</p>
+
+<p>We have suggested a Docker Container Networking solution.</p>
+
+<h4 id="summary">Summary</h4>
+
+<p>*(Docker conatiner network diagram)</p>
+
+<p><strong>The feasibility of docker containers to replace the VMs required for the Linux Course Labs is a success. Bridging of multiple ethernet adaptors in a gateway container is successful using bridge utils.</strong></p>
+
+<p><strong>We will proceed with scripting to automate the resource creation as well as Azure Lab services or DevTestLabs</strong></p>
+
+<p><strong>We will also proceed with rewriting the Linux Course Labs 11-15</strong></p>
+
+<h4 id="reflection">Reflection</h4>
+
+<h4 id="worklog">Worklog</h4>
+
+<h6 id="march-18th">March 18th</h6>
+
+<p><strong>This is the first attempt at creating a docker network.</strong>
+<strong>There is a bridge called linux_bridge with two containers named LinuxPaper and LinuxPaper2</strong></p>
+
+<p><img src="images\LinuxCourseResources\Screenshot 2021-03-18 151055.png" alt="Image" title="Image" /></p>
+
+<p><strong>This is a summary of the container ip addresses in the docker bridge network.</strong></p>
+
+<p><img src="images\LinuxCourseResources\Screenshot 2021-03-18 152127.png" alt="Image" title="Image" /></p>
+
+<p><strong>This is a ping test from one container to another</strong></p>
+
+<p><img src="images\LinuxCourseResources\Screenshot 2021-03-18 152325.png" alt="Image" title="Image" /></p>
+
+<p><strong>This is a ping test from the host to the container</strong></p>
+
+<p><img src="images\LinuxCourseResources\Screenshot 2021-03-18 152619.png" alt="Image" title="Image" /></p>
+
+<p><strong>This is the details of the docker bridge network.</strong></p>
+
+<p><strong>This bridge is visible from the host with ip addr show command.</strong></p>
+
+<p><strong>From the host’s perspective it is called br-c3288eeb762d</strong></p>
+
+<p><img src="images\LinuxCourseResources\Screenshot 2021-03-18 152717.png" alt="Image" title="Image" /></p>
+
+<p><strong>Pinging to the gateway is also capable from a container.</strong></p>
+
+<p><img src="images\LinuxCourseResources\Screenshot 2021-03-18 152847.png" alt="Image" title="Image" /></p>
+
+<h6 id="march-27th">March 27th</h6>
+
+<p><strong>There are now 3 containers. There are 3 networks. The gateway container is part of all 3 containers.</strong>
+<strong>The other two containers are part of separate networks and connected to the gateway. The two isolated networks do not have masqerade enabled and do not have access to the internet by default through docker.</strong></p>
+
+<p><strong>This is the route list on the gateway container</strong></p>
+
+<p><img src="images\LinuxCourseResources\Screenshot 2021-03-27 201159.png" alt="Image" title="Image" /></p>
+
+<p><strong>There was a loss of internet connection to the gateway even though the Gateway Network has masquerade function</strong></p>
+
+<p><img src="images\LinuxCourseResources\Screenshot 2021-03-27 201423.png" alt="Image" title="Image" /></p>
+
+<p><strong>ip route list shows that the deffault is via 172.30.0.1 which does not have masquerade function to outside internet</strong></p>
+
+<p><strong>This must be changed with ip route add default via 192.168.32.1 dev eth 5</strong></p>
+
+<p><strong>This will change the ip routing</strong></p>
+
+<p><img src="images\LinuxCourseResources\Screenshot 2021-03-27 203924.png" alt="Image" title="Image" /></p>
+
+<p><strong>A bridge was created with eth 8 and eth 9 connected to it. However iptables and forwarding has not yet been correctly configured to pass traffic from one isolated network to the other.</strong></p>
+
+<h6 id="march-29th">March 29th</h6>
+
+<p><strong>Pinging from one network to the other is possible after changing the subnet of the containers.</strong></p>
+
+<p><strong>Feasibility test is complete</strong></p>
+
+<p><strong>DevOps team will now follow through with a rewrite of the Course Labs from 11 - 15 and also write scripts to automate the resource creation and explore Azure Lab services and DevTestLabs</strong></p>
+
+<p><strong>We aim to create a comprehensive teaching resource for Faisal to use for his semester.</strong></p>
+
+<h4 id="configurations">Configurations</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	//UPDATE THE VM
+</code></pre></div></div>
+
+<p>sudo apt-get update</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//INSTALL DOCKER
+</code></pre></div></div>
+
+<p>sudo apt install docker.io
+sudo systemctl start docker
+sudo systemctl enable docker</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//CREATE CONTAINER
+</code></pre></div></div>
+
+<p>docker run -i -t –name linuxPaper ubuntu /bin/bash
+exit</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//START CONTAINER
+</code></pre></div></div>
+
+<p>docker start linuxPaper</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//STOP CONTAINER
+</code></pre></div></div>
+
+<p>docker container stop [container]</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//REMOVE CONTAINER
+</code></pre></div></div>
+
+<p>docker container rm [container]</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//SSH INTO CONTAINER
+</code></pre></div></div>
+
+<p>docker exec -it <container name=""> /bin/bash</container></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//CREATE NETWORK BRIDGE
+</code></pre></div></div>
+
+<p>docker network create -d bridge linux_bridge</p>
+
+<p>docker network create <br />
+–driver=bridge <br />
+–opt com.docker.network.bridge.enable_ip_masquerade=false <br />
+[bridge name]</p>
+
+<p>–subnet=</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//SHOW DOCKER NETWORK LIST
+</code></pre></div></div>
+
+<p>docker network ls</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//REMOVE NETWORK BRIDGE
+</code></pre></div></div>
+
+<p>docker network rm [bridge]</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//INSPECT NETWORK BRIDGE
+</code></pre></div></div>
+
+<p>docker network inspect linux_bridge</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//CREATE CONTAINER TO NETWORK
+</code></pre></div></div>
+
+<p>docker run -d –net=linux_bridge –name linuxPaper ubuntu</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//CONNECT EXISTING RUNNING CONTAINER TO NETWORK
+</code></pre></div></div>
+
+<p>docker network connect linux_bridge linuxPaper</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//DISCONNECT CONTAINER FROM NETWORK
+</code></pre></div></div>
+
+<p>docker network disconnect [network] [container]</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// INSTALL UTILITIES IN CONTAINER
+</code></pre></div></div>
+
+<p>apt-get update
+apt-get install iputils-ping
+apt install iproute2
+apt-get install vim
+apt update -y
+apt-get install iptables sudo -y</p>
+
+<p>apt-get install bridge-utils
+apt install net-tools</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//set up a user
+</code></pre></div></div>
+
+<p>adduser admin
+adduser admin sudo</p>
+
+<p>su - admin</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//start container with full permission
+</code></pre></div></div>
+
+<p>docker exec -it –privileged [container] /bin/bash</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//VM ip
+</code></pre></div></div>
+
+<p>ip addr show</p>
+
+<p>GatewayVM
+ens160: 10.25.137.151</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//docker container ip configurations
+</code></pre></div></div>
+
+<p>BatCave
+Gateway: 172.23.0.1
+ip: 172.23.0.2</p>
+
+<p>docker0: 172.17.0.10
+linux_bridge:172.19.0.4</p>
+
+<p>WayneManor
+Gateway: 172.24.0.1
+ip: 172.24.0.2</p>
+
+<p>docker0: 172.17.0.11
+linux_bridge: 172.19.0.5</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//pinging from BatCave &lt;&gt; WayneManor not possible
+
+//bridging two NIC
+</code></pre></div></div>
+
+<p>http://www.microhowto.info/howto/bridge_traffic_between_two_or_more_ethernet_interfaces_on_linux.html</p>
+
+<p>https://dzone.com/articles/step-by-step-guide-establishing-container-networki</p>
+
+<p>https://www.thegeekstuff.com/2017/06/brctl-bridge/
+https://help.ubuntu.com/community/NetworkConnectionBridge</p>
+
+<p>ip addr flush dev [eth1]
+ip addr flush dev [eth2]
+brctl addbr [bridgename]
+brctl addbr [bridgename] [eth1] [eth2]
+ip link set dev [bridgename] up</p>
+
+<p>brctl addbr
+	//show bridges
+brctl show
+	//delete bridge
+brctl delbr [bridgename]
+	//add interface
+brctl addif dev [interface]
+	//add multiple interfaces
+brctl addiff dev [interface] [interface]</p>
+
+<p>{add ips to bridges}</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//ip commands
+</code></pre></div></div>
+
+<p>ip addr show
+ip addr add [ipaddress] dev [eth]
+(ip addr add 172.29.0.3/16 dev eth8)</p>
+
+<p>ip addr del[ipaddress] dev [eth]
+ip route show
+ip link set [eth] up
+ip link set [eth] down</p>
+
+<p>ip route del default 
+ip route add default via 192.168.32.1[gateway ip] dev [eth]</p>
+
+<p>https://subscription.packtpub.com/book/networking_and_servers/9781785287916/1/ch01lvl1sec12/connecting-two-networks</p>
+
+<p>http://ebtables.netfilter.org/br_fw_ia/br_fw_ia.html</p>
+
+    </div>
+
+    <hr>
+
+<footer>
+    <div class="container"></div>
+</footer>
+
+</body>
+
+</html>

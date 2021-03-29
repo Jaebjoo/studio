@@ -33,6 +33,14 @@ We have suggested a Docker Container Networking solution.
 
 #### Reflection
 
+This task was an amazing opportunity to be immersed in Docker Virtualisation and Linux Networking.
+
+This task has given in depth knowledge about how to manage docker containers, configure networking and also customize networking with bridges inside the docker containers.
+
+The gained knowledge can also be applied to the Sys Admin Course Resources ticket with puppet. We must experiment with traffic routing in from outside the host to the docker containers as well as inter container communication.
+
+This task will also provide an opportunity to update the course material and directly take part in the teaching process by rewriting the labs.
+
 #### Worklog
 
 ###### March 18th
@@ -91,15 +99,140 @@ We have suggested a Docker Container Networking solution.
 
 ###### March 29th
 
+**Starting from a fresh set up. We aim to have 3 Containers. Gotham_Gateway, Bat_Cave, Wayne_Manor.**
+**There are also three networks.**
+
+The networks have the following details
+
+**BatCave Network**
+Subnet:  172.30.0.0/16
+
+Gateway: 172.30.0.1
+
+masquerade: false
+
+**WayneManor Network**
+Subnet:  172.29.0.0/16
+
+Gateway: 172.29.0.1
+
+masquerade: false
+
+**GothamGateway Network**
+Subnet:  192.168.32.0/20
+
+Gateway: 192.168.32.1
+
+masquerade: true
+
+* Note that the masquerade function is disabled on BatCave and WayneManor, so it does not have internet access. And it can only be achieved through the gateway container.
+
+![Image](images\LinuxCourseResources\Screenshot 2021-03-29 201947.png "Image")
+
+![Image](images\LinuxCourseResources\Screenshot 2021-03-29 202026.png "Image")
+
+![Image](images\LinuxCourseResources\Screenshot 2021-03-29 202049.png "Image")
+
+**There are 3 containers**
+
+![Image](images\LinuxCourseResources\Screenshot 2021-03-29 202106.png "Image")
+
+**The following are the networking details of the containers**
+
+![Image](images\LinuxCourseResources\Screenshot 2021-03-29 202156.png "Image")
+
+![Image](images\LinuxCourseResources\Screenshot 2021-03-29 202241.png "Image")
+
+![Image](images\LinuxCourseResources\Screenshot 2021-03-29 202337.png "Image")
+
+![Image](images\LinuxCourseResources\Screenshot 2021-03-29 202408.png "Image")
+
+![Image](images\LinuxCourseResources\Screenshot 2021-03-29 202422.png "Image")
+
+![Image](images\LinuxCourseResources\Screenshot 2021-03-29 202450.png "Image")
+
+![Image](images\LinuxCourseResources\Screenshot 2021-03-29 202505.png "Image")
+
+**BatCave Container**
+eth3 ip: 172.30.0.2/16
+
+default gateway: 172.30.0.1/16 (BatCave Network Gateway)
+
+**WayneManor Container**
+eth3 ip: 172.30.0.2/16
+
+172.29.0.4/16
+
+default gateway: 172.29.0.3 (changed to bridge br0 on GothamGateway Container)
+
+* note that there are two ips added to the ethernet adapter. This the ip for the BatCave Network has been added to be able to communicate with the BatCave container.
+
+**GothamGateway Container**
+eth5 ip: 192.168.32.2/20
+
+eth8: flushed
+
+eth9: flushed
+
+default gateway: 192.168.32.1 (GothamGateway to outside network)
+
+Gotham Gateway also has a bridge
+
+br0 ip: 172.30.0.3/16
+
+172.29.0.3/16 (which is the default gateway of WayneManor container)
+
+![Image](images\LinuxCourseResources\Screenshot 2021-03-29 202519.png "Image")
+
+The br0 bridge has two interfaces added to it. This connects the the two ethernets which have Bat_Cave and Wayne_Manor. Traffic from either side will be linked by this bridge.
+
+![Image](images\LinuxCourseResources\Screenshot 2021-03-29 203044.png "Image")
+
+Ping from Wayne Manor to the BatCave (172.30.0.2) is successful.
+
+![Image](images\LinuxCourseResources\Screenshot 2021-03-29 203056.png "Image")
+
+Ping to google from WayneManor is successful.
+This is because the default route has been set to the bridge 172.29.0.3. This was manually changed from the default gateway of the Wayne Manor Network which is 172.29.0.1.
+
+![Image](images\LinuxCourseResources\Screenshot 2021-03-29 203121.png "Image")
+
+Pinging WayneManor (172.30.0.4) from BatCave is successful too.
+
+This confirms that the bridge is fully functional.
+
+![Image](images\LinuxCourseResources\Screenshot 2021-03-29 203146.png "Image")
+
+Pinging google from BatCave is not possible.
+
+![Image](images\LinuxCourseResources\Screenshot 2021-03-29 203213.png "Image")
+
+You must delete the default ip route and replace this with the bridge ip.
+
+The original default route was the BatCave default Gateway (172.30.0.1)
+This must be changed to the Bridge ip (172.30.0.3)
+
+![Image](images\LinuxCourseResources\Screenshot 2021-03-29 203307.png "Image")
+
+default route has been changed.
+
+![Image](images\LinuxCourseResources\Screenshot 2021-03-29 203325.png "Image")
+
+pinging to google from Batcave is now successful.
+
+![Image](images\LinuxCourseResources\Screenshot 2021-03-29 203450.png "Image")
+
+running traceroute from Bat_Cave to google shows that the traffic goes to BatCave Network bridge br0 ip (172.30.0.3) to the Gotham Gateway Network default gateway (192.168.32.1) to the host vm's default gateway (10.25.0.1) out to the outer public network. 
+
 **Pinging from one network to the other is possible after changing the subnet of the containers.**
 
 **Feasibility test is complete**
 
 **DevOps team will now follow through with a rewrite of the Course Labs from 11 - 15 and also write scripts to automate the resource creation and explore Azure Lab services and DevTestLabs**
 
+**We must also experiment with iptables on Gotham Gateway Container.**
+
 **We aim to create a comprehensive teaching resource for Faisal to use for his semester.**
-
-
 
 
 

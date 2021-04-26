@@ -10,7 +10,13 @@ description: Studio 6 Documentation
 
 #### Following Documentation
 
-...
+There has been less following documentation created by other members, but more documentation online about potential solutions.
+
+I have had to follow documentation online about Docker Networking, Puppet and other relevant Azure Services in order to deliver the perfect solution for our clients.
+
+We have also rewritten lab documents which students of Linux and SysAdmin courses will follow.
+
+This has been a great opportunity to contribute to the learning materials at BIT.
 
 #### Writing Documentation
  
@@ -32,3 +38,10 @@ Need to allocate time to tidying and organising the File system.
 * **Meeting Summaries** Meeting notes are being made and the Teams Board has been updated accordingly to reflect this.
 
 **It is imperative that documentation is left for future DevOps Team Members to follow.**
+
+We have reorganised the file system so that documentation can be easily archived and also retrieved when necessary.
+PC Maintenance records have been updated to a OneNote document so that previous maintenance work can be viewed and compared easily.
+
+Azure Resources OneNote document has also been created to record the individual resources that are being created on Azure. Details are logged about the resource's owner, purpose, IP and other relevant information. 
+
+We have done a better job of documenting Proposals and Reports so that other members are able to see a summary of the jobs being done and completed as well as keeping a record for managers to refer to in the future.

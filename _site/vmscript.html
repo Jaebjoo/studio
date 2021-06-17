@@ -172,54 +172,75 @@
 </nav>
 <hr>
     <div class="container">
-        <h2 id="studio-5-">Studio 5 :</h2>
-<h1 id="desktop-maintenance">Desktop Maintenance</h1>
+        <h2 id="studio-6-">Studio 6 :</h2>
+<h1 id="automation-of-vm-creation">Automation of VM creation</h1>
 
-<h4 id="clients-requests">Client’s Requests</h4>
+<p>####</p>
 
-<p><img src="images\Desktop_Maintenance\1ClientRequest.png" alt="Client's Request" title="Client's Request" /></p>
+<h5 id="the-following-is-the-script-used-for-the-vm-creation">The following is the script used for the VM creation.</h5>
+<p>It takes a csv file and a cloud.init file
+cloud init runs the first time the VM boots.</p>
 
-<p>Desktop Maintenance of physical machines in in D312 must be carried out weekly on a roster.</p>
+<p>$List = Import-CSV C:\Users\jooj2\Desktop\vms.csv -Header ‘Name’
+ForEach($Student in $List)
+{</p>
 
-<p>I carried out the maintenance with Jonathon on August 28th.
-Fully functionality of the machines must be checked and recorded.
-Any faults with the machines must be investigated and reported.
-Faults components must be replaced and followed up.</p>
+<p>$VMName = $Student.Name + “IN616-test5”
+$ComputerName = $Student.Name + “.IN616”
+$VMSize = “Standard_B1ls”
+$ResourceGroupName =”IN616Dev”
+$LocationName = “australiasoutheast”
+$VMLocalAdminUser = “student”
+$VMLocalAdminSecurePassword = ConvertTo-SecureString jae!Rohill1234 -AsPlainText -Force
+$NetworkName = “IN616_network”
+$ImageName = “Ubuntu Server 18.04 LTS - Gen1”
+$OpenPorts = “22”</p>
 
-<h4 id="summary">Summary</h4>
+<p>$NetworkName = “IN616_network”
+$NICName = $VMName
+$SubnetName = “IN616”
+$SubnetAddressPrefix = “10.2.2.0/24”
+$VnetAddressPrefix = “10.2.2.0/24”</p>
 
-<p>4 Machines in total were fixed, Motherboards replaced and also a CPU replaced.
-1 Machine needed a network card to be updated.</p>
+<p>$publicIp = New-AzPublicIpAddress -Name $VMName -ResourceGroupName $ResourceGroupName -AllocationMethod Static -DomainNameLabel $dnsPrefix -Location $LocationName</p>
 
-<h4 id="reflection">Reflection</h4>
+<p>$SingleSubnet = New-AzVirtualNetworkSubnetConfig -Name $SubnetName -AddressPrefix $SubnetAddressPrefix
+$Vnet = New-AzVirtualNetwork -Name $NetworkName -ResourceGroupName $ResourceGroupName -Location $LocationName -AddressPrefix $VnetAddressPrefix -Subnet $SingleSubnet
+$NIC = New-AzNetworkInterface -Name $NICName -ResourceGroupName $ResourceGroupName -Location $LocationName -SubnetId $Vnet.Subnets[0].Id -PublicIPAddressID $publicIp.Id</p>
 
+<p>$Credential = New-Object System.Management.Automation.PSCredential ($VMLocalAdminUser, $VMLocalAdminSecurePassword);</p>
+
+<p>$VirtualMachine = New-AzVMConfig -VMName $VMName -VMSize $VMSize</p>
+
+<p>$VirtualMachine = Add-AzVMNetworkInterface -VM $VirtualMachine -Id $NIC.Id
+$VirtualMachine = Set-AzVMSourceImage -VM $VirtualMachine -PublisherName ‘Canonical’ -Offer ‘UbuntuServer’ -Skus ‘18.04-LTS’ -Version latest
+$VirtualMachine = Set-AzVMOperatingSystem -VM $VirtualMachine -Linux -ComputerName $ComputerName -Credential $Credential -CustomData (Get-Content -Path C:\Users\jooj2\Desktop\cloud_init.txt -Raw)</p>
+
+<p>New-AzVM -ResourceGroupName $ResourceGroupName -Location $LocationName -VM $VirtualMachine -Verbose
+}</p>
+
+<p>$CloudinitFile = Import-CSV C:\Users\jooj2\Desktop\cloud_init.txt
+$EncodedText=(Get-Content -raw C:\Users\jooj2\Desktop\cloud_init.txt)</p>
+
+<h5 id="the-following-is-the-cloudinit-file">The following is the cloud.init file</h5>
+
+<p>#cloud-config
+users:</p>
 <ul>
-  <li>It was a valuable experience a small aspect of Rob’s job.</li>
-  <li>I was able to appreciate the use of valuable time on a relatively mundane task of fixing computers.</li>
-  <li>Physically repairing and troubleshooting faults with devices was time consuming and recording the results of the check was crucial</li>
-  <li>I feel that the documentation process could be updated. It was currently being recorded on a single word file. Each week was recorded on a different document and it was difficult to track which computers have had a long term unfixed fault.</li>
-  <li>I believe I can improve this in the next semester.</li>
+  <li>default</li>
+  <li>name: student
+groups: sudo
+sudo: [‘ALL=(ALL) NOPASSWD:ALL’]
+shell: /bin/bash</li>
 </ul>
 
-<h4 id="procedures">Procedures</h4>
+<p>chpasswd:
+    list: |
+         student: password
+    expire: False</p>
 
-<p>On the 28th and 29th of August, Jonathon and I checked and fixed computers in D312.</p>
+<p>It will create the user and then change the password to “password”</p>
 
-<p><img src="images\Desktop_Maintenance\2Checklist.png" alt="Checklist" title="Checklist" /></p>
-
-<p><img src="images\Desktop_Maintenance\3.jpg" alt="3" title="3" /></p>
-
-<p><img src="images\Desktop_Maintenance\4.jpg" alt="4" title="4" /></p>
-
-<p><img src="images\Desktop_Maintenance\5.jpg" alt="5" title="5" /></p>
-
-<p><img src="images\Desktop_Maintenance\6.jpg" alt="6" title="6" /></p>
-
-<p><img src="images\Desktop_Maintenance\7.jpg" alt="7" title="7" /></p>
-
-<p><img src="images\Desktop_Maintenance\8.jpg" alt="8" title="8" /></p>
-
-<p><img src="images\Desktop_Maintenance\9.jpg" alt="9" title="9" /></p>
 
     </div>
 

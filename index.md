@@ -13,7 +13,8 @@ This is a summary of my work in the Studio Dev Ops Team.
 The Dev Ops team operates on the Microsoft Azure Platform.
 Our main task for 2020/2021 has been migrating the Otago Polytechnic IT Faculty On-site Infrastructure to the Azure Cloud Platform.
 
-I have been personally involved with migrating the DB2/3 Resources, migrating resources such as the ICT Helpdesk site and also adivising lecturers on their teaching resource options.
+This semester, I have been personally involved migrating resources such as the ICT Helpdesk site and also adivising lecturers on their teaching resource options.
+My colleagues and I have been involved with containerising and virtualising a Linux VM network architecture of 3 VMs into a single VM using Docker Networking.
 
 Remaining time is allocated to research of the Azure Services and Documentation.
 
